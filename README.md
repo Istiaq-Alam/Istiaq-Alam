@@ -1,4 +1,4 @@
-![logo](https://github.com/Istiaq-Alam/Istiaq-Alam/blob/main/github-header-image.png)
+![logo](https://github.com/Istiaq-Alam/Istiaq-Alam/blob/main/header-image.png)
 <h1 align="center">Hi 👋, I'm Istiaq Alam</h1>
 <h3 align="center">A passionate Competitive Programmer from Bangladesh</h3>
 
