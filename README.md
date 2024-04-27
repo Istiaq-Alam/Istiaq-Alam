@@ -2,8 +2,8 @@
 <h1 align="center">🔰Welcome🔰</h1>
 <h3 align="center">A passionate Competitive Programmer from Bangladesh</h3>
 
-<img align="right" alt="coding" width="400" src="https://imarticus.org/blog/wp-content/uploads/2021/12/djbwgfw.gif">
-<img align="right" alt="coding" width="40" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTRidndrNDRyYzcwamh3czAwOHIxemFtcnJ0OGpxZmRudnJubDh4OSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/bGgsc5mWoryfgKBx1u/giphy.gif">
+/*<img align="right" alt="coding" width="400" src="https://imarticus.org/blog/wp-content/uploads/2021/12/djbwgfw.gif">*/
+<img align="right" alt="coding" width="400" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTRidndrNDRyYzcwamh3czAwOHIxemFtcnJ0OGpxZmRudnJubDh4OSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/bGgsc5mWoryfgKBx1u/giphy.gif">
 
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=istiaq-alam&label=Profile%20views&color=0e75b6&style=flat" alt="istiaq-alam" /> </p>
