@@ -6,7 +6,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=istiaq-alam&label=Profile%20views&color=0e75b6&style=flat" alt="istiaq-alam" /> </p>
 
-- 🔭 I’m currently Studying Computer Science & Engineering. [https://ndub.edu.bd/academics/programs/undergraduate-programs/bachelor-of-science-in-computer-science-engineering-cse/](https://ndub.edu.bd/academics/programs/undergraduate-programs/bachelor-of-science-in-computer-science-engineering-cse/)
+- 🔭 I’m currently Studying Computer Science & Engineering. 
 
 - 🌱 I’m currently learning **Mobile Application Development, Website Designing**
 
