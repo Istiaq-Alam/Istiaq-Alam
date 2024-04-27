@@ -1,6 +1,6 @@
 ![logo](https://github.com/Istiaq-Alam/Istiaq-Alam/blob/main/header-image.png)
-<h1 align="center">🔰Welcome🔰</h1>
-<h3 align="center">A passionate Competitive Programmer from Bangladesh</h3>
+<h1 align="center">🔰Istiaq Alam🔰</h1>
+<h3 align="center">"Crafting Innovative Solutions: Engineer | Designer | Developer"</h3>
 
 <img align="right" alt="coding" width="400" src="https://media.giphy.com/media/bJ4TVNYNUympPgcpem/giphy.gif?cid=790b7611ily2pvhfdw0hu2h4ryctkf1kvsho7keuamj1idcq&ep=v1_gifs_search&rid=giphy.gif&ct=g">
 
