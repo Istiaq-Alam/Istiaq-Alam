@@ -1,5 +1,7 @@
 ![logo](https://github.com/Istiaq-Alam/Istiaq-Alam/blob/main/header-image.png)
 
+
+
 <h1 align="center">🔰Istiaq Alam🔰</h1>
 <h3 align="center">"Crafting Innovative Solutions: Engineer | Designer | Developer"</h3>
 
@@ -46,3 +48,5 @@
 <a href="https://github.com/istiaq-alam/convoychat">
   <img height=200 align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=istiaq-alam&show_icons=true&theme=transparent" alt="istiaq-alam"/>
 </a>
+<p align="center"><img height=200 align="center" src="https://leetcard.jacoblin.cool/Istiak_Alam?ext=heatmap" alt="leetcode"/>
+</p>
