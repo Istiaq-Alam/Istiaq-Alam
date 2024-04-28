@@ -48,5 +48,4 @@
 <a href="https://github.com/istiaq-alam/convoychat">
   <img height=200 align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=istiaq-alam&show_icons=true&theme=transparent" alt="istiaq-alam"/>
 </a>
-<p align="center"><img height=200 align="center" src="https://leetcard.jacoblin.cool/Istiak_Alam?ext=heatmap" alt="leetcode"/>
-</p>
+<p><img align="center" src="https://leetcard.jacoblin.cool/Istiak_Alam?ext=heatmap" alt="leetcode"/></p>
