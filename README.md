@@ -49,4 +49,5 @@
 </a>
 
 <h3 align="left">Competitive Programming States:</h3>
-<hr><p><img align="center" src="https://leetcard.jacoblin.cool/Istiak_Alam?ext=heatmap" alt="leetcode"/></p>
+<hr><p><img align="left" src="https://leetcard.jacoblin.cool/Istiak_Alam?ext=heatmap" alt="leetcode"/>
+<img align="right" height="300" src="https://codeforces-readme-stats.vercel.app/api/card?username=Istiaq_Alam&show_icons=true&theme=transparent" alt="codeforces"/></p>
