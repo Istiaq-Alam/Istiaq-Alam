@@ -53,3 +53,7 @@
 <hr><p><img align="center" src="https://leetcard.jacoblin.cool/Istiak_Alam?ext=heatmap" alt="leetcode"/>
 <img align="center" height="300" src="https://codeforces-readme-stats.vercel.app/api/card?username=Istiaq_Alam&show_icons=true&theme=transparent" alt="codeforces"/>
 <img align="center" height="400" width="500" src="https://github.com/istiaq-alam/cc-visualizer/blob/main/src/main/java/com/ccvisualizer/ccvisualizer/output.svg"></p>
+
+
+
+<div class="col-sm-4"><a class="dashlet" href="/leaderboard/solvers?filter=all-time&amp;start=4750#intent=Istiak.4128"><div class="dashlet__mark"><img class="icon" src="https://static.toph.co/icons/check.svg?_=365d71f0f3e4728ec49934044ce6e0d821f5d221" alt=""></div><div class="dashlet__body"><div class="dashlet__stat">16 / 1863</div>Problems Solved</div><span class="dashlet__foot">Rank: 4764</span></a></div>
