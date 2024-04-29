@@ -43,7 +43,7 @@
 <p align="left"><img align="center" width="400" src="https://github-readme-stats.vercel.app/api/top-langs?username=istiaq-alam&langs_count=8&show_icons=true&theme=transparent"/></p>
 
 <a href="https://github.com/istiaq-alam/github-readme-stats">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=istiaq-alam&show_icons=true&theme=transparen" />
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=istiaq-alam&show_icons=true&theme=transparent" />
 </a>
 <a href="https://github.com/istiaq-alam/convoychat">
   <img height=200 align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=istiaq-alam&show_icons=true&theme=transparent" alt="istiaq-alam"/>
