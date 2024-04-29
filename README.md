@@ -2,6 +2,7 @@
 
 
 
+
 <h1 align="center">🔰Istiaq Alam🔰</h1>
 <h3 align="center">"Crafting Innovative Solutions: Engineer | Designer | Developer"</h3>
 
@@ -42,7 +43,7 @@
 <p align="left"><img align="center" width="400" src="https://github-readme-stats.vercel.app/api/top-langs?username=istiaq-alam&langs_count=8&show_icons=true&theme=transparent"/></p>
 
 <a href="https://github.com/istiaq-alam/github-readme-stats">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=istiaq-alam&show_icons=true&theme=transparent" />
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=istiaq-alam&show_icons=true&theme=transparen" />
 </a>
 <a href="https://github.com/istiaq-alam/convoychat">
   <img height=200 align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=istiaq-alam&show_icons=true&theme=transparent" alt="istiaq-alam"/>
@@ -50,4 +51,5 @@
 
 <h3 align="left">Competitive Programming States:</h3>
 <hr><p><img align="center" src="https://leetcard.jacoblin.cool/Istiak_Alam?ext=heatmap" alt="leetcode"/>
-<img align="center" height="300" src="https://codeforces-readme-stats.vercel.app/api/card?username=Istiaq_Alam&show_icons=true&theme=transparent" alt="codeforces"/></p>
+<img align="center" height="300" src="https://codeforces-readme-stats.vercel.app/api/card?username=Istiaq_Alam&show_icons=true&theme=transparent" alt="codeforces"/>
+<img align="center" height="400" width="500" src="https://github.com/istiaq-alam/cc-visualizer/blob/main/src/main/java/com/ccvisualizer/ccvisualizer/output.svg"></p>
