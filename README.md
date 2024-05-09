@@ -10,9 +10,9 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=istiaq-alam&label=Profile%20views&color=0e75b6&style=flat" alt="istiaq-alam" /> </p>
 
-- 🔭 I’m currently Studying Computer Science & Engineering.
+- 🔭 I’m currently **Studying Computer Science & Engineering.**
 
-- 👾 Interested in Cyber Security and Ethical Hacking
+- 👾 Interested in **Cyber Security and Ethical Hacking.**
   
 - 🌱 I’m currently learning **Mobile Application Development, Website Designing**
 
