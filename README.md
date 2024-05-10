@@ -1,8 +1,6 @@
 ![logo](https://github.com/Istiaq-Alam/Istiaq-Alam/blob/main/header-image.png)
 
 
-
-
 <h1 align="center">🔰Istiaq Alam🔰</h1>
 <h3 align="center">"Crafting Innovative Solutions: Engineer | Designer | Developer"</h3>
 
@@ -14,8 +12,11 @@
 
 - 👾 Interested in **Cyber Security and Ethical Hacking.**
   
-- 🌱 I’m currently learning **Mobile Application Development,
-  Digital Marketing**
+- 🌱 I’m currently learning-
+  - **Mobile Application Development**
+  - **Digital Marketing**
+  - Cyber Security & Ethical Hacking
+  - Networking 
 
 - 👯 I’m looking to collaborate on **Software Development Company**
 
