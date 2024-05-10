@@ -1,6 +1,7 @@
 ![logo](https://github.com/Istiaq-Alam/Istiaq-Alam/blob/main/header-image.png)
 [![trophy](https://github-profile-trophy.vercel.app/?username=Istiaq-Alam&theme=onestar&no-bg=true&no-frame=true)](https://github.com/ryo-ma/github-profile-trophy)
 
+
 <h1 align="center">🔰Istiaq Alam🔰</h1>
 <h3 align="center">"Crafting Innovative Solutions: Engineer | Designer | Developer"</h3>
 
@@ -61,6 +62,5 @@
 <hr><p><img align="center" src="https://leetcard.jacoblin.cool/Istiak_Alam?ext=heatmap" alt="leetcode"/>
 <img align="center" height="300" src="https://codeforces-readme-stats.vercel.app/api/card?username=Istiaq_Alam&show_icons=true&theme=transparent" alt="codeforces"/>
 <img align="center" height="400" width="500" src="https://github.com/istiaq-alam/cc-visualizer/blob/main/src/main/java/com/ccvisualizer/ccvisualizer/output.svg"></p>
-
 
 
