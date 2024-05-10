@@ -14,7 +14,8 @@
 
 - 👾 Interested in **Cyber Security and Ethical Hacking.**
   
-- 🌱 I’m currently learning **Mobile Application Development, Digital Marketing**
+- 🌱 I’m currently learning **Mobile Application Development,
+  Digital Marketing**
 
 - 👯 I’m looking to collaborate on **Software Development Company**
 
