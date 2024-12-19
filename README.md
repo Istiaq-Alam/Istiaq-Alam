@@ -49,7 +49,7 @@
  </p>
 
 ### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=Istiaq-Alam&limit=5&theme=dark&combine_all_yearly_contributions=true)
+![](https://github-contributor-stats.vercel.app/api?username=Istiaq-Alam&limit=5&theme=transparent&combine_all_yearly_contributions=true)
 
 <!-- <p align="left"><img align="center" width="400" src="https://github-readme-stats.vercel.app/api/top-langs?username=istiaq-alam&langs_count=8&show_icons=true&theme=transparent"/></p> -->
 <p align="left"><img align="center" width="400" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Istiaq-Alam&theme=transparent&hide_border=false&include_all_commits=false&count_private=false&layout=compact"/></p>
