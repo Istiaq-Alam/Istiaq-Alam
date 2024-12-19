@@ -48,9 +48,9 @@
 <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40"/> </a> <a href="https://unrealengine.com/" target="_blank" rel="noreferrer">
  </p>
 
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
----
+### 🔝 Top Contributed Repo
+![](https://github-contributor-stats.vercel.app/api?username=Istiaq-Alam&limit=5&theme=dark&combine_all_yearly_contributions=true)
+
 <!-- <p align="left"><img align="center" width="400" src="https://github-readme-stats.vercel.app/api/top-langs?username=istiaq-alam&langs_count=8&show_icons=true&theme=transparent"/></p> -->
 <p align="left"><img align="center" width="400" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Istiaq-Alam&theme=transparent&hide_border=false&include_all_commits=false&count_private=false&layout=compact"/></p>
 
@@ -64,11 +64,8 @@
 
 
 
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=Istiaq-Alam&limit=5&theme=dark&combine_all_yearly_contributions=true)
 
 
-[![](https://visitcount.itsvg.in/api?id=Istiaq-Alam&icon=0&color=13)](https://visitcount.itsvg.in)
 
 
 <h3 align="left">Competitive Programming States:</h3>
@@ -77,3 +74,6 @@
 <img align="center" height="400" width="500" src="https://github.com/istiaq-alam/cc-visualizer/blob/main/src/main/java/com/ccvisualizer/ccvisualizer/output.svg"></p>
 
 
+### ✍️ Random Dev Quote
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
+---
