@@ -48,7 +48,8 @@
 <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40"/> </a> <a href="https://unrealengine.com/" target="_blank" rel="noreferrer">
  </p>
 
-
+### ✍️ Random Dev Quote
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
 <!-- <p align="left"><img align="center" width="400" src="https://github-readme-stats.vercel.app/api/top-langs?username=istiaq-alam&langs_count=8&show_icons=true&theme=transparent"/></p> -->
 <p align="left"><img align="center" width="400" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Istiaq-Alam&theme=transparent&hide_border=false&include_all_commits=false&count_private=false&layout=compact"/></p>
 
@@ -60,8 +61,7 @@
 </a>
 
 
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
+
 
 ### 🔝 Top Contributed Repo
 ![](https://github-contributor-stats.vercel.app/api?username=Istiaq-Alam&limit=5&theme=dark&combine_all_yearly_contributions=true)
