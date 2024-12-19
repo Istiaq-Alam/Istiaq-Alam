@@ -48,7 +48,7 @@
 <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40"/> </a> <a href="https://unrealengine.com/" target="_blank" rel="noreferrer">
  </p>
 
-### 🔝 Top Contributed Repo
+### 🔝 Top Contributed Repositories
 ![](https://github-contributor-stats.vercel.app/api?username=Istiaq-Alam&limit=5&theme=transparent&combine_all_yearly_contributions=true)
 
 <!-- <p align="left"><img align="center" width="400" src="https://github-readme-stats.vercel.app/api/top-langs?username=istiaq-alam&langs_count=8&show_icons=true&theme=transparent"/></p> -->
@@ -68,7 +68,7 @@
 
 
 
-<h3 align="left">Competitive Programming States:</h3>
+<h3 align="left">🐱‍👤 Competitive Programming States:</h3>
 <hr><p><img align="center" src="https://leetcard.jacoblin.cool/Istiak_Alam?ext=heatmap" alt="leetcode"/>
 <img align="center" height="300" src="https://codeforces-readme-stats.vercel.app/api/card?username=Istiaq_Alam&show_icons=true&theme=transparent" alt="codeforces"/>
 <img align="center" height="400" width="500" src="https://github.com/istiaq-alam/cc-visualizer/blob/main/src/main/java/com/ccvisualizer/ccvisualizer/output.svg"></p>
