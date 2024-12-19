@@ -59,6 +59,17 @@
   <img height=200 align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=istiaq-alam&show_icons=true&theme=transparent" alt="istiaq-alam"/>
 </a>
 
+
+### ✍️ Random Dev Quote
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
+
+### 🔝 Top Contributed Repo
+![](https://github-contributor-stats.vercel.app/api?username=Istiaq-Alam&limit=5&theme=dark&combine_all_yearly_contributions=true)
+
+---
+[![](https://visitcount.itsvg.in/api?id=Istiaq-Alam&icon=0&color=13)](https://visitcount.itsvg.in)
+
+
 <h3 align="left">Competitive Programming States:</h3>
 <hr><p><img align="center" src="https://leetcard.jacoblin.cool/Istiak_Alam?ext=heatmap" alt="leetcode"/>
 <img align="center" height="300" src="https://codeforces-readme-stats.vercel.app/api/card?username=Istiaq_Alam&show_icons=true&theme=transparent" alt="codeforces"/>
