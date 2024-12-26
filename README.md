@@ -15,9 +15,9 @@
   
 - 🌱 I’m currently learning-
   - **Mobile Application Development**
-  - **Digital Marketing**
-  - Cyber Security & Ethical Hacking
-  - Networking 
+  - **Web Development**
+  - **Cyber Security & Ethical Hacking**
+  - **Networking** 
 
 - 👯 I’m looking to collaborate on **Software Development Company**
 
