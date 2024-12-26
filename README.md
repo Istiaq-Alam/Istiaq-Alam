@@ -14,10 +14,10 @@
 - 👾 Interested in **Cyber Security and Ethical Hacking.**
   
 - 🌱 I’m currently learning-
-  - **Mobile Application Development**
   - **Web Development**
   - **Cyber Security & Ethical Hacking**
-  - **Networking** 
+  - Mobile Application Development
+  - Networking
 
 - 👯 I’m looking to collaborate on **Software Development Company**
 
