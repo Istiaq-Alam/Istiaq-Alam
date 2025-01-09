@@ -37,6 +37,7 @@
 <a href="https://www.hackerrank.com/codeblockers_yt" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="codeblockers_yt" height="30" width="40" /></a>
 <a href="https://codeforces.com/profile/istiaq_alam" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codeforces.svg" alt="istiaq_alam" height="30" width="40" /></a>
 <a href="https://www.leetcode.com/istiak_alam" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="istiak_alam" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/in/istiak-alam-zsh/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linkedin.svg" alt="istiak_alam" height="30" width="40" /></a>
 <a href="https://discord.gg/741272288296566793" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="741272288296566793" height="30" width="40" /></a>
 </p>
 
