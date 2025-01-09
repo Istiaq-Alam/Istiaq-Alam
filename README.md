@@ -31,6 +31,7 @@
 
 
 <p align="left">
+<a href="https://linkedin.com/in/istiak-alam-zsh" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="istiak alam" height="30" width="40" /></a>
 <a href="https://fb.com/istiaq.alam.545" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="istiaq.alam.545" height="30" width="40" /></a>
 <a href="https://instagram.com/istiaq_tusher.apk" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="istiaq_tusher.apk" height="30" width="40" /></a>
 <a href="https://www.youtube.com/c/code_blockers" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="code_blockers" height="30" width="40" /></a>
