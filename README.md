@@ -64,6 +64,7 @@
   <img height=200 align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=istiaq-alam&show_icons=true&theme=transparent" alt="istiaq-alam"/>
 </a>
 
+[![GitHub Streak](https://github-readme-streak-stats-salesp07.vercel.app?user=Istiaq-Alam&theme=transparent)](https://git.io/streak-stats)
 
 
 
