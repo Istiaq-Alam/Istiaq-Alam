@@ -63,7 +63,7 @@
 <a href="https://github.com/istiaq-alam/convoychat">
 
 
-[![GitHub Streak](https://github-readme-streak-stats-salesp07.vercel.app?user=Istiaq-Alam&theme=transparent)](https://git.io/streak-stats)
+[![GitHub Streak](https://github-readme-streak-stats-salesp07.vercel.app?user=Istiaq-Alam&theme=transparent&currStreakNum=27EB12&fire=EBB114&dates=38ACEB&stroke=1D00EB)](https://git.io/streak-stats)
 
 
 
