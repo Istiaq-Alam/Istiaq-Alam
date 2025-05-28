@@ -21,7 +21,7 @@
   - **Web Development**
   - **Cyber Security & Ethical Hacking**
   - Mobile Application Development
-  - Networking
+  - Computer Networking
 
 - 👯 I’m looking to collaborate on **Software Development Company**
 
