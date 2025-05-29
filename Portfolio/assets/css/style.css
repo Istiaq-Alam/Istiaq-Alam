@@ -65,7 +65,7 @@
   --orange-yellow-crayola: hsl(128, 100%, 50%);
   --vegas-gold: hsl(118, 54%, 58%);
   --light-gray: hsl(0, 0%, 100%);
-  --light-gray-70: hsla(0, 0%, 84%, 0.7);
+  --light-gray-70: hsla(128, 100%, 50%, 0.658);
   --bittersweet-shimmer: hsl(0, 100%, 1%);
 
   /**
