@@ -510,7 +510,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(0, 0%, 0%, 0);
+  background: hsla(187, 100%, 33%, 0.178);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
