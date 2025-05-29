@@ -163,7 +163,8 @@ for (let i = 0; i < navigationLinks.length; i++) {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const letters = "アァイィウヴエカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワンABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    const letters = "Istiaq Alam ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    //const letters = "アァイィウヴエカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワンABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     const fontSize = 12;
     const columns = canvas.width / fontSize;
     const drops = [];
