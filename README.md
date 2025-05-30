@@ -12,7 +12,7 @@
 <img align="right" alt="coding" width="400" src="https://media.giphy.com/media/bJ4TVNYNUympPgcpem/giphy.gif?cid=790b7611ily2pvhfdw0hu2h4ryctkf1kvsho7keuamj1idcq&ep=v1_gifs_search&rid=giphy.gif&ct=g">
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=istiaq-alam&label=Profile%20views&color=0e75b6&style=flat" alt="istiaq-alam" /> </p>
-[Portfolio](https://istiaq-alam.vercel.app/)
+
 
 - 🔭 I’m currently **Studying Computer Science & Engineering.**
 
@@ -28,7 +28,7 @@
 
 - 💬 Ask me about **Cyber Security And Ethical Hacking**
 
-- 📫 How to reach me [Gmail](istiaqlm@gmail.com) , [LinkedIn](https://www.linkedin.com/in/istiak-alam-zsh/)
+- 📫 How to reach me [Gmail](istiaqlm@gmail.com) , [LinkedIn](https://www.linkedin.com/in/istiak-alam-zsh/), [Portfolio](https://istiaq-alam.vercel.app/)
 
 - ⚡ Fun fact **I am always serious... 👨‍⚖️**
 <img align="right" alt="coding" width="400" src="https://cdn.dribbble.com/users/2131993/screenshots/4948736/media/45dceb640723d72436c427add7966cf8.gif">
