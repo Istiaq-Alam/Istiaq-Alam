@@ -28,7 +28,7 @@
 
 - 💬 Ask me about **Cyber Security And Ethical Hacking**
 
-- 📫 How to reach me [Gmail](istiaqlm@gmail.com) , [LinkedIn](https://www.linkedin.com/in/istiak-alam-zsh/), [Portfolio](https://istiaq-alam.vercel.app/)
+- 📫 How to reach me [Gmail](istiaqlm@gmail.com) , [Portfolio](https://istiaq-alam.vercel.app/)
 
 - ⚡ Fun fact **I am always serious... 👨‍⚖️**
 <img align="right" alt="coding" width="400" src="https://cdn.dribbble.com/users/2131993/screenshots/4948736/media/45dceb640723d72436c427add7966cf8.gif">
