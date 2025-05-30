@@ -8,7 +8,7 @@
 2. Adding more projects & links in the card
 3. Certificate with a Full View
 
-# Second Page - Resume
+# Second Page - Resume --------------> Done
 1. Education Description
 2. Experience Description
 3. Adding Skill on
