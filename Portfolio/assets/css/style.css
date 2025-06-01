@@ -1465,17 +1465,12 @@ textarea.form-input::-webkit-resizer {
 .modals-content {
   margin: auto;
   display: block;
-  width: 80%;  /* 80% screen width */
+  width: 95%;  /* 80% screen width */
   max-height: 90vh; /* Don't overflow vertically */
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 }
-
-
-
-
-
 /**
  * responsive larger than 580px screen
  */
@@ -1823,6 +1818,27 @@ textarea.form-input::-webkit-resizer {
     font-size: 18px;
   }
 
+  .modals {
+  display: none; 
+  position: fixed;
+  z-index: 999;
+  padding-top: 300px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Modals Image */
+.modals-content {
+  margin: auto;
+  display: block;
+  width: 95%;  /* 80% screen width */
+  max-height: 90vh; /* Don't overflow vertically */
+  border-radius: 0px;
+}
+
 }
 
 
@@ -1948,6 +1964,27 @@ textarea.form-input::-webkit-resizer {
     width: max-content;
     margin-left: auto;
   }
+
+  .modals {
+  display: none; 
+  position: fixed;
+  z-index: 999;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Modals Image */
+.modals-content {
+  margin: auto;
+  display: block;
+  width: 95%;  /* 80% screen width */
+  max-height: 90vh; /* Don't overflow vertically */
+  border-radius: 0px;
+}
 
 }
 
@@ -2077,6 +2114,26 @@ textarea.form-input::-webkit-resizer {
     height: 230px;
   }
 
+  .modals {
+  display: none; 
+  position: fixed;
+  z-index: 999;
+  padding-top: 90px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Modals Image */
+.modals-content {
+  margin: auto;
+  display: block;
+  width: 95%;  /* 80% screen width */
+  max-height: 90vh; /* Don't overflow vertically */
+  border-radius: 0px;
+}
 }
 
 
@@ -2219,7 +2276,26 @@ textarea.form-input::-webkit-resizer {
     justify-content: center;
   }
 
+  .modals {
+  display: none; 
+  position: fixed;
+  z-index: 999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
 
+/* Modals Image */
+.modals-content {
+  margin: auto;
+  display: block;
+  width: 75%;  /* 80% screen width */
+  max-height: 90vh; /* Don't overflow vertically */
+  border-radius: 0px;
+}
 
   /**
 	 * RESUME
