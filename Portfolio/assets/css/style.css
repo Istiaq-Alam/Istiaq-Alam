@@ -344,9 +344,9 @@ article.active {
 .modals-content {
   margin: auto;
   display: block;
-  width: 80%;  /* Half screen width */
+  width: 80%;  /* 80% screen width */
   max-height: 90vh; /* Don't overflow vertically */
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 /* Close button */
