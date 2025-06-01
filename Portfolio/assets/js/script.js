@@ -113,6 +113,23 @@ for (let i = 0; i < filterBtn.length; i++) {
 
 }
 
+//Modals
+function openModal(imageSrc) {
+    document.getElementById("modalImage").src = imageSrc;
+    document.getElementById("imgModal").style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById("imgModal").style.display = "none";
+  }
+
+  // Optional: Close modal when clicking outside the image
+  window.onclick = function(event) {
+    const modal = document.getElementById("imgModal");
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  }
 
 
 // contact form variables
