@@ -332,7 +332,7 @@ article.active {
   display: none; 
   position: fixed;
   z-index: 999;
-  padding-top: 50px;
+  padding-top: 65px;
   left: 0;
   top: 0;
   width: 100%;
@@ -344,8 +344,8 @@ article.active {
 .modals-content {
   margin: auto;
   display: block;
-  width: 50%;  /* Half screen width */
-  max-height: 80vh; /* Don't overflow vertically */
+  width: 80%;  /* Half screen width */
+  max-height: 90vh; /* Don't overflow vertically */
   border-radius: 10px;
 }
 
