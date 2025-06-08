@@ -1,0 +1,357 @@
+{
+  "basics": {
+    "url": {
+      "href": "",
+      "label": ""
+    },
+    "name": "Istiaq Alam",
+    "email": "istiaqlm@gmail.com",
+    "phone": "+8801765376101",
+    "picture": {
+      "url": "https://avatars.githubusercontent.com/u/168295675?v=4",
+      "size": 64,
+      "effects": {
+        "border": false,
+        "hidden": false,
+        "grayscale": false
+      },
+      "aspectRatio": 1,
+      "borderRadius": 0
+    },
+    "headline": "Cyber Security Specialist ",
+    "location": "Dhaka, Bangladesh",
+    "customFields": [
+      {
+        "id": "wymbzz2qyl42ci0ta8fjkh2m",
+        "icon": "push-pin",
+        "name": "Portfolio",
+        "value": "https://istiaq-alam.vercel.app/"
+      },
+      {
+        "id": "q0kmvzjb03pg6awr03bof5eo",
+        "icon": "github-logo",
+        "name": "Istiaq Alam",
+        "value": "https://github.com/Istiaq-Alam"
+      },
+      {
+        "id": "y0v848rxct97fqg6vjf15nco",
+        "icon": "facebook-logo",
+        "name": "Istiaq Alam Tusher ",
+        "value": "https://www.facebook.com/IstiaqTusher.apk/"
+      }
+    ]
+  },
+  "metadata": {
+    "css": {
+      "value": "* {\n\toutline: 1px solid #000;\n\toutline-offset: 4px;\n}",
+      "visible": false
+    },
+    "page": {
+      "format": "a4",
+      "margin": 18,
+      "options": {
+        "breakLine": true,
+        "pageNumbers": true
+      }
+    },
+    "notes": "",
+    "theme": {
+      "text": "#000000",
+      "primary": "#475569",
+      "background": "#ffffff"
+    },
+    "layout": [
+      [
+        [
+          "summary",
+          "experience",
+          "education",
+          "projects",
+          "volunteer",
+          "references"
+        ],
+        [
+          "profiles",
+          "skills",
+          "interests",
+          "certifications",
+          "awards",
+          "publications",
+          "languages"
+        ]
+      ]
+    ],
+    "template": "pikachu",
+    "typography": {
+      "font": {
+        "size": 14,
+        "family": "IBM Plex Serif",
+        "subset": "latin",
+        "variants": [
+          "regular"
+        ]
+      },
+      "hideIcons": false,
+      "lineHeight": 1.5,
+      "underlineLinks": false
+    }
+  },
+  "sections": {
+    "awards": {
+      "id": "awards",
+      "name": "Awards",
+      "items": [],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "custom": {},
+    "skills": {
+      "id": "skills",
+      "name": "Skills",
+      "items": [
+        {
+          "id": "o6ozwr86ykkinps09me86vy6",
+          "visible": true,
+          "name": "Web Technologies ",
+          "description": "Advance",
+          "level": 4,
+          "keywords": [
+            "HTML5",
+            "JavaScript",
+            "CSS",
+            "Python",
+            "PHP",
+            "MySQL"
+          ]
+        },
+        {
+          "id": "sqs8rtyciqgtcdw703nf7ilo",
+          "visible": true,
+          "name": "Cyber Security ",
+          "description": "Intermediate ",
+          "level": 3,
+          "keywords": [
+            "Shell",
+            "Kali Linux",
+            "Burp Suite",
+            "Wireshark",
+            "Nmap",
+            "Metasploit"
+          ]
+        },
+        {
+          "id": "tppcxzemdnyaiga66bos9kyh",
+          "visible": true,
+          "name": "Software",
+          "description": "Advance",
+          "level": 3,
+          "keywords": [
+            "Photoshop",
+            "Illustrator",
+            "Android Studio",
+            "PostmanAPI"
+          ]
+        }
+      ],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "summary": {
+      "id": "summary",
+      "name": "Summary",
+      "columns": 1,
+      "content": "<p style=\"text-align: justify\">Computer Science &amp; Engineering student with a deep interest in <strong>Cyber Security and Ethical Hacking</strong>. Discovering system vulnerabilities, understanding digital threats, and crafting defenses that make the web a safer place. Currently engaged in hands-on learning through CTFs, simulation environments, and open-source security projects.</p><p style=\"text-align: justify\">Build secure and user-friendly websites that are functional and visually striking. Approach integrates clean coding practices with a strong focus on digital safety. Aim to make every site not only eye-catching but also aligned with cybersecurity best practices.</p>",
+      "visible": true,
+      "separateLinks": true
+    },
+    "profiles": {
+      "id": "profiles",
+      "name": "Profiles",
+      "items": [
+        {
+          "id": "ecei9lhnl23fyrc151fkz5ww",
+          "visible": true,
+          "network": "Github",
+          "username": "Istiaq-Alam",
+          "icon": "github",
+          "url": {
+            "label": "",
+            "href": "https://github.com/Istiaq-Alam"
+          }
+        },
+        {
+          "id": "xhdy6eaobzk02jm9f6cvd7rx",
+          "visible": true,
+          "network": "Facebook",
+          "username": "IstiaqTusher.apk",
+          "icon": "facebook",
+          "url": {
+            "label": "",
+            "href": "https://www.facebook.com/IstiaqTusher.apk/"
+          }
+        }
+      ],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "projects": {
+      "id": "projects",
+      "name": "Projects",
+      "items": [
+        {
+          "id": "ghuq45tpgvugstv0ctnser5y",
+          "visible": true,
+          "name": "NDUB Student Management System",
+          "description": "Project Lead",
+          "date": "April 2024 - Present",
+          "summary": "<p>A web app that enables Notre Dame University Bangladesh students and admins to efficiently manage academic data, results, and courses.</p>",
+          "keywords": [],
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "zp066i3sf97v954cl8spq5ra",
+          "visible": true,
+          "name": "Flappy Bird ",
+          "description": "Game Development",
+          "date": "September 2023",
+          "summary": "<p>A Java-based GUI project where users can play by clicking a Play button, opening a new game window.</p>",
+          "keywords": [],
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "education": {
+      "id": "education",
+      "name": "Education",
+      "items": [
+        {
+          "id": "uw6t4mluyiebfxszltk2xn6o",
+          "visible": true,
+          "institution": "Notre Dame University Bangladesh ",
+          "studyType": "Bachelor's in CSE",
+          "area": "Dhaka, Bangladesh",
+          "score": "",
+          "date": "September 2022 - Present",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "interests": {
+      "id": "interests",
+      "name": "Interests",
+      "items": [],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "languages": {
+      "id": "languages",
+      "name": "Languages",
+      "items": [
+        {
+          "id": "okuc6w53zymbw2laoyl5pa3g",
+          "visible": true,
+          "name": "English",
+          "description": "Frequent Speaker",
+          "level": 2
+        },
+        {
+          "id": "vgmenhtmq78qy9k7sk99vcgw",
+          "visible": true,
+          "name": "Bengali",
+          "description": "Native Speaker",
+          "level": 5
+        }
+      ],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "volunteer": {
+      "id": "volunteer",
+      "name": "Volunteering",
+      "items": [],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "experience": {
+      "id": "experience",
+      "name": "Experience",
+      "items": [
+        {
+          "id": "qby9bz25z5cp0f28pw52gead",
+          "visible": true,
+          "company": "Notre Dame University Bangladesh Computer Club",
+          "position": "Graphics & Web Designer ",
+          "location": "Dhaka, Bangladesh",
+          "date": "January 2023 - Present",
+          "summary": "<ul><li><p>Since 2023, I have been working as a Graphics &amp; Web Designer at the Notre Dame University Bangladesh Computer Club, design digital visuals for events, social media, and official branding. </p></li><li><p>I also bring two years of hands-on experience in web design, specializing in creating responsive and user-friendly interfaces using HTML and CSS.</p></li></ul>",
+          "url": {
+            "label": "",
+            "href": "https://ndubcc.vercel.app/"
+          }
+        },
+        {
+          "id": "a876bo9k22u9hlffp0fklfjm",
+          "visible": true,
+          "company": "Kali Linux & Bash Terminal System",
+          "position": "",
+          "location": "",
+          "date": "2019 — Present",
+          "summary": "<p>I have over five years of experience using Kali Linux and other Bash-based terminal systems, which has given me strong command-line and security knowledge.</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "references": {
+      "id": "references",
+      "name": "References",
+      "items": [],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "publications": {
+      "id": "publications",
+      "name": "Publications",
+      "items": [],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "certifications": {
+      "id": "certifications",
+      "name": "Certifications",
+      "items": [],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    }
+  }
+}
