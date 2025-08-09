@@ -74,8 +74,6 @@
 
 
 
-<img src="https://tryhackme-badges.s3.amazonaws.com/TheSpyder.apk.png" alt="TheSpyder.apk" />
-<!--![tryhackme stats](https://raw.githubusercontent.com/Istiaq-Alam/Istiaq-Alam/master/assets/thm_propic.png) -->
 
 
 <!--
