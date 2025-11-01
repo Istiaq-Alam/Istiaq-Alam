@@ -2,7 +2,7 @@
 [![trophy](https://github-profile-trophy.vercel.app/?username=Istiaq-Alam&column=-1&theme=algolia&no-bg=true&no-frame=true)](https://github.com/ryo-ma/github-profile-trophy)
   
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=900&size=31&pause=2000&color=00F716&center=true&vCenter=true&multiline=true&width=1000&height=100&lines=%F0%9F%94%B0Istiaq+Alam%F0%9F%94%B0)](https://git.io/typing-svg)
-<hr> 
+<hr>   
 <!-- <h1 align="center">🔰Istiaq Alam🔰</h1> -->
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=900&size=21&pause=2000&color=00F716&center=true&vCenter=true&multiline=true&width=1000&height=100&lines=%22Crafting+Innovative+Solutions%3A+Engineer+%7C+Designer+%7C+Developer%22)](https://git.io/typing-svg)
