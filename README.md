@@ -55,17 +55,18 @@
  </p>
 
   <br>
+  <hr>
   
-### 🔝 Top Contributed Repositories
+## 🔝 Top Contributed Repositories
+<div align=center>
+    
 ![](https://github-contributor-stats.vercel.app/api?username=Istiaq-Alam&limit=5&theme=transparent&combine_all_yearly_contributions=true)
 
-<!-- <p align="left"><img align="center" width="400" src="https://github-readme-stats.vercel.app/api/top-langs?username=istiaq-alam&langs_count=8&show_icons=true&theme=transparent"/></p> -->
-<p align="left"><img align="center" width="400" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Istiaq-Alam&theme=transparent&hide_border=false&include_all_commits=false&count_private=false&layout=compact"/></p>
+<!-- <p align="left"><img align="center" width="400" src="https://github-readme-stats.vercel.app/api/top-langs?username=istiaq-alam&langs_count=8&show_icons=true&theme=transparent"/></p> 
+<p align="left"><img align="center" width="400" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Istiaq-Alam&theme=transparent&hide_border=false&include_all_commits=false&count_private=false&layout=compact"/></p>-->
 
-<a href="https://github.com/istiaq-alam/github-readme-stats">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=istiaq-alam&show_icons=true&theme=transparent" />
-</a>
-<a href="https://github.com/istiaq-alam/convoychat">
+<div align=center>
+  <img width=380 align="center" src="https://github-readme-stats-salesp07.vercel.app/api/top-langs/?username=istiaq-alam&hide=HTML&langs_count=8&layout=compact&theme=transparent&border_radius=10&size_weight=0.5&count_weight=0.5&exclude_repo=github-readme-stats" alt="top langs" />
 
 
 [![GitHub Streak](https://github-readme-streak-stats-salesp07.vercel.app?user=Istiaq-Alam&theme=transparent&currStreakNum=27EB12&fire=EBB114&dates=38ACEB&stroke=1D00EB)](https://git.io/streak-stats)
@@ -74,7 +75,7 @@
 
 <img src="https://tryhackme-badges.s3.amazonaws.com/TheSpyder.apk.png" alt="TheSpyder.apk" />
 
-
+</div>
 
 
 
