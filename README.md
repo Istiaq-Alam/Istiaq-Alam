@@ -9,9 +9,12 @@
 
 <!-- <h3 align="center">"Crafting Innovative Solutions: Engineer | Designer | Developer"</h3> -->
 
-<img align="right" alt="coding" width="400" src="https://media.giphy.com/media/bJ4TVNYNUympPgcpem/giphy.gif?cid=790b7611ily2pvhfdw0hu2h4ryctkf1kvsho7keuamj1idcq&ep=v1_gifs_search&rid=giphy.gif&ct=g">
+<div>
+<p> <img align="right" alt="coding" width="400" src="https://media.giphy.com/media/bJ4TVNYNUympPgcpem/giphy.gif?cid=790b7611ily2pvhfdw0hu2h4ryctkf1kvsho7keuamj1idcq&ep=v1_gifs_search&rid=giphy.gif&ct=g"> </p>
+<p> <img align="right-down" src="https://tryhackme-badges.s3.amazonaws.com/TheSpyder.apk.png" alt="TheSpyder.apk"/> </p>
+</div>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=istiaq-alam&label=Profile%20views&color=0e75b6&style=flat" alt="istiaq-alam" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=istiaq-alam&label=Profile%20views&color=0e75b6&style=flat" alt="istiaq-alam" /> </p> 
 
 
 - 🔭 I’m currently **Studying Computer Science & Engineering.**
@@ -31,7 +34,9 @@
 - 📫 How to reach me [Gmail](istiaqlm@gmail.com) , [Portfolio](https://istiaq-alam.vercel.app/)
 
 - ⚡ Fun fact **I am always serious... 👨‍⚖️**
+
 <img align="right" alt="coding" width="400" src="https://cdn.dribbble.com/users/2131993/screenshots/4948736/media/45dceb640723d72436c427add7966cf8.gif">
+
 <h3 align="left">Connect with me:</h3>
 
 
@@ -56,9 +61,10 @@
 
   <br>
   <hr>
+
   
-## 🔝 Top Contributed Repositories
 <div align=center>
+    <h1>🔝 Top Contributed Repositories</h1>
     
 ![](https://github-contributor-stats.vercel.app/api?username=Istiaq-Alam&limit=5&theme=transparent&combine_all_yearly_contributions=true)
 
@@ -71,9 +77,13 @@
 
 [![GitHub Streak](https://github-readme-streak-stats-salesp07.vercel.app?user=Istiaq-Alam&theme=transparent&currStreakNum=27EB12&fire=EBB114&dates=38ACEB&stroke=1D00EB)](https://git.io/streak-stats)
 
+![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Istiaq-Alam&theme=transparent)
+![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Istiaq-Alam&theme=transparent)
+![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Istiaq-Alam&theme=transparent)
+![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Istiaq-Alam&theme=transparent&utcOffset=8)
+![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Istiaq-Alam&theme=transparent)
 
 
-<img src="https://tryhackme-badges.s3.amazonaws.com/TheSpyder.apk.png" alt="TheSpyder.apk" />
 
 </div>
 
