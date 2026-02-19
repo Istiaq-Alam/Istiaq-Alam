@@ -9,10 +9,17 @@
 
 <!-- <h3 align="center">"Crafting Innovative Solutions: Engineer | Designer | Developer"</h3> -->
 
-<div>
-<p> <img align="right" alt="coding" width="400" src="https://media.giphy.com/media/bJ4TVNYNUympPgcpem/giphy.gif?cid=790b7611ily2pvhfdw0hu2h4ryctkf1kvsho7keuamj1idcq&ep=v1_gifs_search&rid=giphy.gif&ct=g"> </p>
-<p> <img align="right-down" src="https://tryhackme-badges.s3.amazonaws.com/TheSpyder.apk.png" alt="TheSpyder.apk"/> </p>
-</div>
+
+<table align="right" border="none">
+  <tr>
+    <td align="center">
+      <img src="https://media.giphy.com/media/bJ4TVNYNUympPgcpem/giphy.gif?cid=790b7611ily2pvhfdw0hu2h4ryctkf1kvsho7keuamj1idcq&ep=v1_gifs_search&rid=giphy.gif&ct=g" />
+      <br>
+      <img src="https://tryhackme-badges.s3.amazonaws.com/TheSpyder.apk.png" />
+    </td>
+  </tr>
+</table>
+
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=istiaq-alam&label=Profile%20views&color=0e75b6&style=flat" alt="istiaq-alam" /> </p> 
 
