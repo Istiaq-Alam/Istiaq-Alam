@@ -1,10 +1,9 @@
 ![logo](https://github.com/Istiaq-Alam/Istiaq-Alam/blob/main/Portfolio/assets/images/header-image2.png)
 [![](https://github-profile-trophy-fork-two.vercel.app/?username=Istiaq-Alam&column=-1&theme=algolia&no-bg=true&no-frame=true)](https://github.com/ryo-ma/github-profile-trophy)
-<div align=center>
-    
-![](https://github-trophies.vercel.app/?username=Istiaq-Alam&column=no&theme=algolia&no-bg=true&no-frame=true)
 
-</div>
+    
+
+
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=900&size=31&pause=2000&color=00F716&center=true&vCenter=true&multiline=true&width=1000&height=100&lines=%F0%9F%94%B0Istiaq+Alam%F0%9F%94%B0)](https://git.io/typing-svg)
 <hr>   
@@ -95,6 +94,8 @@
 ![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Istiaq-Alam&theme=transparent)
 ![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Istiaq-Alam&theme=transparent&utcOffset=8)
 ![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Istiaq-Alam&theme=transparent)
+![](https://github-trophies.vercel.app/?username=Istiaq-Alam&column=no&theme=algolia&no-bg=true&no-frame=true)
+
 
 ![GitHub Stats](https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=Ethical-Hacking&theme=github_dark)
 
