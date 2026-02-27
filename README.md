@@ -97,7 +97,7 @@
 ![](https://github-trophies.vercel.app/?username=Istiaq-Alam&column=no&theme=algolia&no-bg=true&no-frame=true)
 
 
-![GitHub Stats](https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=Ethical-Hacking&theme=github_dark)
+[![GitHub Stats](https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=Ethical-Hacking&theme=github_dark)](https://github.com/Istiaq-Alam/Ethical-Hacking)
 
 </div>
 
