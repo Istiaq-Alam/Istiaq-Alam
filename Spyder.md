@@ -4,8 +4,6 @@
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Share+Tech+Mono&size=18&pause=1500&color=00FF41&center=true&vCenter=true&width=700&lines=%5BROOT%40spyder%5D%23+whoami;Istiak+Alam+%7C+Security+Researcher+%7C+CSE+Student;%5BROOT%40spyder%5D%23+cat+%2Fetc%2Fmission;Crafting+Exploits+%7C+Building+Systems+%7C+Breaking+Things;%5BROOT%40spyder%5D%23+_)](https://git.io/typing-svg)
 
-<img src="https://tryhackme-badges.s3.amazonaws.com/TheSpyder.apk.png" alt="TryHackMe Badge"/>
-&nbsp;
 
 [![Profile Views](https://komarev.com/ghpvc/?username=istiaq-alam&style=flat-square&color=00ff41&label=TERMINAL+SESSIONS)](https://github.com/Istiaq-Alam)
 
@@ -228,7 +226,9 @@ commit y9z0a1b  [CONTEST TRAINER]    Programming contest management web platform
 
 <div align="center">
 
-[![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=Istiaq-Alam&theme=matrix&no-bg=true&no-frame=true&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+![](https://github-trophies.vercel.app/?username=Istiaq-Alam&theme=matrix&no-bg=true&no-frame=true&column=no)
+
+<!--[![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=Istiaq-Alam&theme=matrix&no-bg=true&no-frame=true&column=no)](https://github.com/ryo-ma/github-profile-trophy)-->
 
 </div>
 
