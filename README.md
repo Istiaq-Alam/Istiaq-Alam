@@ -17,7 +17,7 @@
 <table width="10%" align="right">  
     <tr>
     <td align="center">
-      <img src="https://media.giphy.com/media/bJ4TVNYNUympPgcpem/giphy.gif?cid=790b7611ily2pvhfdw0hu2h4ryctkf1kvsho7keuamj1idcq&ep=v1_gifs_search&rid=giphy.gif&ct=g" />
+      <img width="350px" src="https://media.giphy.com/media/bJ4TVNYNUympPgcpem/giphy.gif?cid=790b7611ily2pvhfdw0hu2h4ryctkf1kvsho7keuamj1idcq&ep=v1_gifs_search&rid=giphy.gif&ct=g" />
       <br>
       <img src="https://tryhackme-badges.s3.amazonaws.com/TheSpyder.apk.png" />
     </td>
