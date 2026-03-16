@@ -259,7 +259,7 @@ The system is going down NOW!
 ```
 ╔══════════════════════════════════════════════════════╗
 ║  [ CONNECTION CLOSED ]  Session by: SPY*DER          ║
-║  REMEMBER: Knowledge is the greatest weapon.  🔐     ║
+║ REMEMBER: Knowledge is the greatest weapon.          ║
 ╚══════════════════════════════════════════════════════╝
 ```
 
