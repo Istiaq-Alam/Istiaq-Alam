@@ -132,13 +132,13 @@ PORT        SERVICE         STATE     VERSION
 ```
 
 ```
-commit a1b2c3d  [CLOUD STORAGE]      Private encrypted media vault — Cloudflare Pages
-commit e4f5g6h  [GITHUB CMS]         GitHub-powered content manager — Cloudflare Pages
-commit i7j8k9l  [CYBER PORTFOLIO]    Ethical hacking cybersecurity showcase
-commit m0n1o2p  [REAL-TIME CHAT]     HTML/CSS/JS/PHP/MySQL live messaging app
-commit q3r4s5t  [EGG DROP SAGA]      C++ / OpenGL / GLUT game engine project
-commit u6v7w8x  [LASER SENTINEL]     Arduino laser/LDR invisible security system
-commit y9z0a1b  [CONTEST TRAINER]    Programming contest management web platform
+commit a1b2c3d  [CLOUD STORAGE]                 Private encrypted media vault — Cloudflare Pages
+commit e4f5g6h  [GITHUB CMS]                    GitHub-powered content manager — Cloudflare Pages
+commit i7j8k9l  [CYBER PORTFOLIO]               Ethical hacking cybersecurity showcase
+commit m0n1o2p  [STUDENT MANAGEMENT SYSTEM]     HTML/CSS/JS/PHP/MySQL Student Result Management webapp
+commit q3r4s5t  [EGG DROP SAGA]                 C++ / OpenGL / GLUT game engine project
+commit u6v7w8x  [LASER SENTINEL]                Arduino laser/LDR invisible security system
+commit y9z0a1b  [CONTEST TRAINER]               Programming contest management web platform
 ```
 
 <div align="center">
