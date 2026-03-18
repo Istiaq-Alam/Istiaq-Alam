@@ -3,7 +3,7 @@
 ![logo](https://github.com/Istiaq-Alam/Istiaq-Alam/blob/main/Portfolio/assets/images/header-image2.png)
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Share+Tech+Mono&size=18&pause=1500&color=00FF41&center=true&vCenter=true&width=700&lines=%5BROOT%40spyder%5D%23+whoami;Istiak+Alam+%7C+Security+Researcher+%7C+CSE+Student;%5BROOT%40spyder%5D%23+cat+%2Fetc%2Fmission;Crafting+Exploits+%7C+Building+Systems+%7C+Breaking+Things;%5BROOT%40spyder%5D%23+_)](https://git.io/typing-svg)
-
+    
 
 [![Profile Views](https://komarev.com/ghpvc/?username=istiaq-alam&style=flat-square&color=00ff41&label=TERMINAL+SESSIONS)](https://github.com/Istiaq-Alam)
 
