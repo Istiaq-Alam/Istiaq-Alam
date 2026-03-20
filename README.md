@@ -42,7 +42,7 @@
 
 - 💬 Ask me about **Cyber Security And Ethical Hacking**
 
-- 📫 How to reach me [Gmail](istiaqlm@gmail.com) , [Portfolio](https://istiaq-alam.vercel.app/)
+- 📫 How to reach me [Gmail](istiaqlm@gmail.com) , [Portfolio](https://www.istiaq-alam.me/)
 
 - ⚡ Fun fact **I am always serious... 👨‍⚖️**
 
