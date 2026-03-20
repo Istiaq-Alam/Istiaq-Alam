@@ -101,9 +101,32 @@
 ![](https://github-trophies.vercel.app/?username=Istiaq-Alam&column=no&theme=algolia&no-bg=true&no-frame=true)
 
 
-[![GitHub Stats](https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=Ethical-Hacking&theme=github_dark)](https://github.com/Istiaq-Alam/Ethical-Hacking)
-
 </div>
+
+--- 
+
+<h2>📥 Running Repository </h2> 
+
+<!--[![Ethical-Hacking](https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=Ethical-Hacking&theme=github_dark)](https://github.com/Istiaq-Alam/Ethical-Hacking)-->
+
+<table width="10%" align="center">  
+    <tr>
+    <td>
+      <img href="https://github.com/Istiaq-Alam/Egg-Drop-Saga" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=Egg-Drop-Saga&theme=github_dark" />
+    </td>
+    <td>
+      <img href="https://github.com/Istiaq-Alam/Ethical-Hacking" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=Ethical-Hacking&theme=github_dark" />
+    </td>
+    </tr>
+    <tr>
+    <td>
+      <img href="https://github.com/Istiaq-Alam/Student-Performance-Prediction-with-Explainable-AI" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=Student-Performance-Prediction-with-Explainable-AI&theme=github_dark" />
+    </td>
+    <td>
+      <img href="https://github.com/Istiaq-Alam/Machine-Learning-Lab" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=Machine-Learning-Lab&theme=github_dark" />
+    </td>
+    </tr>-->
+</table>
 
 
 
