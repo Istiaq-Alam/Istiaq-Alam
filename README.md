@@ -123,9 +123,9 @@
       <img href="https://github.com/Istiaq-Alam/Student-Performance-Prediction-with-Explainable-AI" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=Student-Performance-Prediction-with-Explainable-AI&theme=github_dark" />
     </td>
     <td>
-      <img href="https://github.com/Istiaq-Alam/Machine-Learning-Lab" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=Machine-Learning-Lab&theme=github_dark" />
+      <img href="https://github.com/Istiaq-Alam/NDUBCC" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=NDUBCC&theme=github_dark" />
     </td>
-    </tr>-->
+    </tr>
 </table>
 
 
