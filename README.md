@@ -107,23 +107,21 @@
 
 <h2>📥 Running Repository </h2> 
 
-<!--[![Ethical-Hacking](https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=Ethical-Hacking&theme=github_dark)](https://github.com/Istiaq-Alam/Ethical-Hacking)-->
-
 <table width="10%" align="center">  
     <tr>
     <td>
-      <img href="https://github.com/Istiaq-Alam/Egg-Drop-Saga" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=Egg-Drop-Saga&theme=github_dark" />
+      <img href="https://github.com/Istiaq-Alam/Egg-Drop-Saga.git" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=Egg-Drop-Saga&theme=github_dark" />
     </td>
     <td>
-      <img href="https://github.com/Istiaq-Alam/Ethical-Hacking" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=Ethical-Hacking&theme=github_dark" />
+      <img href="https://github.com/Istiaq-Alam/Ethical-Hacking.git" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=Ethical-Hacking&theme=github_dark" />
     </td>
     </tr>
     <tr>
     <td>
-      <img href="https://github.com/Istiaq-Alam/Student-Performance-Prediction-with-Explainable-AI" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=Student-Performance-Prediction-with-Explainable-AI&theme=github_dark" />
+      <img href="https://github.com/Istiaq-Alam/Student-Performance-Prediction-with-Explainable-AI.git" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=Student-Performance-Prediction-with-Explainable-AI&theme=github_dark" />
     </td>
     <td>
-      <img href="https://github.com/Istiaq-Alam/NDUBCC" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=NDUBCC&theme=github_dark" />
+      <img href="https://github.com/Istiaq-Alam/NDUBCC.git" src="https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=NDUBCC&theme=github_dark" />
     </td>
     </tr>
 </table>
