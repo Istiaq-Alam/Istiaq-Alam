@@ -105,7 +105,7 @@
 
 --- 
 
-<h2>📥 Running Repository </h2> 
+<h2>📥 Running Repositories </h2> 
 
 <table width="10%" align="center">  
     <tr>
