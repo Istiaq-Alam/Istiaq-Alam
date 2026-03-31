@@ -113,7 +113,7 @@
      <a href="https://github.com/Istiaq-Alam/Egg-Drop-Saga.git"> <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=Egg-Drop-Saga&theme=github_dark" /> </a>
     </td>
     <td>
-     <a href="https://spydercehub.vercel.app"> <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=Ethical-Hacking&theme=github_dark" /> </a>
+     <a href="https://spydercehub.vercel.app"> <img src="" /> </a>
     </td>
     </tr>
     <tr>
