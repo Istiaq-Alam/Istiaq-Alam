@@ -121,7 +121,7 @@
      <a href="https://github.com/Istiaq-Alam/Student-Performance-Prediction-with-Explainable-AI.git"> <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=Student-Performance-Prediction-with-Explainable-AI&theme=github_dark" /> </a>
     </td>
     <td>
-     <a href="https://github.com/Istiaq-Alam/NDUBCC.git"> <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=NDUBCC&theme=github_dark" /> </a>
+     <a href="https://ndubcc.pages.dev"> <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=NDUBCC&theme=github_dark" /> </a>
     </td>
     </tr>
 </table>
