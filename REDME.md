@@ -142,9 +142,26 @@ commit y9z0a1b  [CONTEST TRAINER]               Programming contest management w
 ```
 
 <div align="center">
+<h2>📥 Running Repositories </h2> 
 
-[![Ethical-Hacking Repo](https://github-readme-stats.vercel.app/api/pin/?username=Istiaq-Alam&repo=Ethical-Hacking&theme=chartreuse-dark&border_color=00ff41&bg_color=0d1117&title_color=00ff41&icon_color=00ff41)](https://github.com/Istiaq-Alam/Ethical-Hacking)
-
+<table width="10%" align="center">  
+    <tr>
+    <td>
+     <a href="https://egg-drop-saga.vercel.app"> <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=Egg-Drop-Saga&theme=github_dark" /> </a>
+    </td>
+    <td>
+     <a href="https://spydercehub.vercel.app"> <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=istiaq-alam&repo=Ethical-hacking&theme=github_dark" /> </a>
+    </td>
+    </tr>
+    <tr>
+    <td>
+     <a href="https://github.com/Istiaq-Alam/Student-Performance-Prediction-with-Explainable-AI.git"> <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=Student-Performance-Prediction-with-Explainable-AI&theme=github_dark" /> </a>
+    </td>
+    <td>
+     <a href="https://ndubcc.pages.dev"> <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=NDUBCC&theme=github_dark" /> </a>
+    </td>
+    </tr>
+</table>
 </div>
 
 ---
