@@ -2,7 +2,7 @@
 
 ![logo](https://github.com/Istiaq-Alam/Istiaq-Alam/blob/main/Portfolio/assets/images/header-image2.png)
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Share+Tech+Mono&size=18&pause=1500&color=00FF41&center=true&vCenter=true&width=700&lines=%5BROOT%40spyder%5D%23+whoami;Istiak+Alam+%7C+Security+Researcher+%7C+CSE+Student;%5BROOT%40spyder%5D%23+cat+%2Fetc%2Fmission;Crafting+Exploits+%7C+Building+Systems+%7C+Breaking+Things;%5BROOT%40spyder%5D%23+_)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Share+Tech+Mono&size=18&pause=1500&color=00FF41&center=true&vCenter=true&width=700&lines=%5BROOT%40istiaq%5D%23+whoami;Istiak+Alam+%7C+Security+Researcher+%7C+CSE+Student;%5BROOT%40istiaq%5D%23+cat+%2Fetc%2Fmission;Crafting+Exploits+%7C+Building+Systems+%7C+Breaking+Things;%5BROOT%40istiaq%5D%23+_)](https://git.io/typing-svg)
     
 
 [![Profile Views](https://komarev.com/ghpvc/?username=istiaq-alam&style=flat-square&color=00ff41&label=TERMINAL+SESSIONS)](https://github.com/Istiaq-Alam)
@@ -12,7 +12,7 @@
 ---
 
 ```bash
-[root@spyder ~]# cat /etc/profile.d/istiak.conf
+[root@istiaq ~]# cat /etc/profile.d/istiak.conf
 ```
 
 <table width="100%" align="center">
@@ -29,7 +29,7 @@ CLEARANCE   : Ethical Hacking & Penetration Testing
 ```
 
 ```bash
-[root@spyder ~]# cat about.txt
+[root@istiaq ~]# cat about.txt
 ```
 
 ```
@@ -46,7 +46,7 @@ CLEARANCE   : Ethical Hacking & Penetration Testing
 <td valign="top" align="right" width="40%">
   <img width="320px" src="https://media.giphy.com/media/bJ4TVNYNUympPgcpem/giphy.gif?cid=790b7611ily2pvhfdw0hu2h4ryctkf1kvsho7keuamj1idcq&ep=v1_gifs_search&rid=giphy.gif&ct=g" />
   <br/><br/>
-  <img src="https://tryhackme-badges.s3.amazonaws.com/TheSpyder.apk.png" alt="TryHackMe"/>
+  <img src="https://tryhackme-badges.s3.amazonaws.com/Theistiaq.apk.png" alt="TryHackMe"/>
 </td>
 </tr>
 </table>
@@ -54,7 +54,7 @@ CLEARANCE   : Ethical Hacking & Penetration Testing
 ---
 
 ```bash
-[root@spyder ~]# cat interests.txt
+[root@istiaq ~]# cat interests.txt
 ```
 
 ```
@@ -69,7 +69,7 @@ CLEARANCE   : Ethical Hacking & Penetration Testing
 ---
 
 ```bash
-[root@spyder ~]# nmap --services SKILLS
+[root@istiaq ~]# nmap --services SKILLS
 ```
 
 ```
@@ -87,7 +87,7 @@ PORT        SERVICE         STATE     VERSION
 ```
 
 ```bash
-[root@spyder ~]# ls -la /opt/tools/
+[root@istiaq ~]# ls -la /opt/tools/
 ```
 
 <div align="center">
@@ -128,7 +128,7 @@ PORT        SERVICE         STATE     VERSION
 ---
 
 ```bash
-[root@spyder ~]# git log --oneline --all -- projects/
+[root@istiaq ~]# git log --oneline --all -- projects/
 ```
 
 ```
@@ -150,7 +150,7 @@ commit y9z0a1b  [CONTEST TRAINER]               Programming contest management w
      <a href="https://egg-drop-saga.vercel.app"> <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=Egg-Drop-Saga&theme=github_dark" /> </a>
     </td>
     <td>
-     <a href="https://spydercehub.vercel.app"> <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=istiaq-alam&repo=Ethical-hacking&theme=github_dark" /> </a>
+     <a href="https://istiaqcehub.vercel.app"> <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=istiaq-alam&repo=Ethical-hacking&theme=github_dark" /> </a>
     </td>
     </tr>
     <tr>
@@ -167,7 +167,7 @@ commit y9z0a1b  [CONTEST TRAINER]               Programming contest management w
 ---
 
 ```bash
-[root@spyder ~]# cat /proc/net/connections
+[root@istiaq ~]# cat /proc/net/connections
 ```
 
 <div align="center">
@@ -190,7 +190,7 @@ commit y9z0a1b  [CONTEST TRAINER]               Programming contest management w
 ---
 
 ```bash
-[root@spyder ~]# neofetch --github-stats
+[root@istiaq ~]# neofetch --github-stats
 ```
 
 <div align="center">
@@ -206,7 +206,7 @@ commit y9z0a1b  [CONTEST TRAINER]               Programming contest management w
 ---
 
 ```bash
-[root@spyder ~]# cat /var/log/profile-summary.log
+[root@istiaq ~]# cat /var/log/profile-summary.log
 ```
 
 <div align="center">
@@ -224,7 +224,7 @@ commit y9z0a1b  [CONTEST TRAINER]               Programming contest management w
 ---
 
 ```bash
-[root@spyder ~]# cat /var/log/contributions.log
+[root@istiaq ~]# cat /var/log/contributions.log
 ```
 
 <div align="center">
@@ -238,7 +238,7 @@ commit y9z0a1b  [CONTEST TRAINER]               Programming contest management w
 ---
 
 ```bash
-[root@spyder ~]# cat /var/log/trophies.log
+[root@istiaq ~]# cat /var/log/trophies.log
 ```
 
 <div align="center">
@@ -252,7 +252,7 @@ commit y9z0a1b  [CONTEST TRAINER]               Programming contest management w
 ---
 
 ```bash
-[root@spyder ~]# cat /etc/motd
+[root@istiaq ~]# cat /etc/motd
 ```
 
 <div align="center">
@@ -266,8 +266,8 @@ commit y9z0a1b  [CONTEST TRAINER]               Programming contest management w
 ---
 
 ```bash
-[root@spyder ~]# shutdown -h --message "Thanks for visiting. Stay curious. Stay sharp."
-Broadcasting message from root@spyder...
+[root@istiaq ~]# shutdown -h --message "Thanks for visiting. Stay curious. Stay sharp."
+Broadcasting message from root@istiaq...
 The system is going down NOW!
 ```
 
