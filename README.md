@@ -46,7 +46,7 @@ CLEARANCE   : Ethical Hacking & Penetration Testing
 <td valign="top" align="right" width="40%">
   <img width="320px" src="https://media.giphy.com/media/bJ4TVNYNUympPgcpem/giphy.gif?cid=790b7611ily2pvhfdw0hu2h4ryctkf1kvsho7keuamj1idcq&ep=v1_gifs_search&rid=giphy.gif&ct=g" />
   <br/><br/>
-  <img src="https://tryhackme-badges.s3.amazonaws.com/Theistiaq.apk.png" alt="TryHackMe"/>
+  <img src="https://tryhackme-badges.s3.amazonaws.com/TheSpyder.apk.png" alt="TryHackMe"/>
 </td>
 </tr>
 </table>
