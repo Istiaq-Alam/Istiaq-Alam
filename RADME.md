@@ -22,7 +22,7 @@ SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=900&size=21&p
   </tr>
 </table>
 
-<p align="left"> <img
+<p align="left"> <img   
     src="https://komarev.com/ghpvc/?username=istiaq-alam&label=Profile%20views&color=0e75b6&style=flat"
     alt="istiaq-alam" /> </p>
 
