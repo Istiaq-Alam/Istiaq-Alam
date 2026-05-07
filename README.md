@@ -195,11 +195,12 @@ commit y9z0a1b  [CONTEST TRAINER]               Programming contest management w
 
 <div align="center">
 
-<img width="40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Istiaq-Alam&layout=compact&theme=chartreuse-dark&border_color=00ff41&bg_color=0d1117&title_color=00ff41&text_color=c9d1d9&hide=HTML&langs_count=8" />
+
+<img width="40%" src="https://github-readme-stats-salesp07.vercel.app/api/top-langs/?username=Istiaq-Alam&layout=compact&theme=chartreuse-dark&border_color=00ff41&bg_color=0d1117&title_color=00ff41&text_color=c9d1d9&hide=HTML&langs_count=8" />
 
 <br>
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=Istiaq-Alam&show_icons=true&theme=chartreuse-dark&border_color=00ff41&bg_color=0d1117&title_color=00ff41&icon_color=00ff41&text_color=c9d1d9" />
+<img width="49%" src="https://github-readme-stats-fast.vercel.app/api/streak?username=Istiaq-Alam&show_icons=true&theme=chartreuse-dark&border_color=00ff41&bg_color=0d1117&title_color=00ff41&icon_color=00ff41&text_color=c9d1d9" />
 
 </div>
 
@@ -229,7 +230,7 @@ commit y9z0a1b  [CONTEST TRAINER]               Programming contest management w
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=Istiaq-Alam&theme=chartreuse-dark&background=0d1117&border=00ff41&stroke=00ff41&ring=00ff41&fire=ff6600&currStreakNum=ffffff&sideNums=00ff41&currStreakLabel=00ff41&sideLabels=888888&dates=888888" />
+<img width="49%" src="https://github-readme-stats-fast.vercel.app/api?username=Istiaq-Alam&theme=chartreuse-dark&background=0d1117&border=00ff41&stroke=00ff41&ring=00ff41&fire=ff6600&currStreakNum=ffffff&sideNums=00ff41&currStreakLabel=00ff41&sideLabels=888888&dates=888888" />
 
 ![](https://github-contributor-stats.vercel.app/api?username=Istiaq-Alam&limit=5&theme=github_dark&combine_all_yearly_contributions=true)
 
