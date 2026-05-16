@@ -26,7 +26,7 @@
 2. Page converted to PDF in new Tab
 3. Hardware project + Research papers names ✅
 4. Adding thumbnails ✅
-
+    
 # Fifth Page - Contact 
 1. Present Address ✅
-2. Fix the send massage Contact from to Email sender 
+2. Fix the send massage Contact from to Email sender      
