@@ -215,11 +215,8 @@ commit y9z0a1b  [CONTEST TRAINER]               Programming contest management w
 <div align="center">
 
 ![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Istiaq-Alam&theme=github_dark)
-
 ![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Istiaq-Alam&theme=github_dark)
-
 ![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=Istiaq-Alam&theme=github_dark)
-
 ![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Istiaq-Alam&theme=github_dark&utcOffset=6)
 
 ![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Istiaq-Alam&theme=github_dark)
