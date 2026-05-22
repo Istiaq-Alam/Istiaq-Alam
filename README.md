@@ -27,17 +27,17 @@ ROLE        : CSE Student | Security Researcher | Dev
 STATUS      : [ ACTIVE ]  ██████████ 100%
 CLEARANCE   : Ethical Hacking & Penetration Testing
 ```
-
+   
 ```bash
 [root@istiaq ~]# cat about.txt
 ```
-
+    
 ```
 🔭  Studying Computer Science & Engineering
 👾  Interested in Cyber Security & Ethical Hacking
 🌱  Learning: Web Dev | Networking | Mobile Apps
 👯  Looking to collaborate on Software Dev projects
-💬  Ask me about: Cyber Security & Ethical Hacking
+💬  Ask me about: Cyber Security & Ethical Hacking 
 📫  Contact: istiaqlm@gmail.com
 ⚡  Fun fact: I am always serious... 👨‍⚖️
 ```
