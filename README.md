@@ -155,7 +155,7 @@ commit y9z0a1b  [CONTEST TRAINER]               Programming contest management w
     </tr>
     <tr>
     <td>
-     <a href="https://github.com/Istiaq-Alam/Student-Performance-Prediction-with-Explainable-AI.git"> <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=Student-Performance-Prediction-with-Explainable-AI&theme=github_dark" /> </a>
+     <a href="https://github.com/Istiaq-Alam/Flappy-Birds-Game.git"> <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=Flappy-Birds-Game&theme=github_dark" /> </a>
     </td>
     <td>
      <a href="https://ndubcc.pages.dev"> <img src="https://github-readme-stats-fast.vercel.app/api/pin/?username=Istiaq-Alam&repo=NDUBCC&theme=github_dark" /> </a>
