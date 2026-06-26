@@ -1,0 +1,21 @@
+{
+  "name": "Istiaq Alam Portfolio",
+  "short_name": "Istiaq-Alam",
+  "description": "Cyber Security Enthusiast & Web Developer",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1a2e",
+  "theme_color": "#1a1a2e",
+  "icons": [
+    {
+      "src": "/assets/images/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
