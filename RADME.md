@@ -1,6 +1,6 @@
 ![logo](https://github.com/Istiaq-Alam/Istiaq-Alam/blob/main/Portfolio/assets/images/header-image2.png)
 [![](https://github-profile-trophy-fork-two.vercel.app/?username=Istiaq-Alam&column=-1&theme=algolia&no-bg=true&no-frame=true)](https://github.com/ryo-ma/github-profile-trophy)
-
+    
 [![Typing
 SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=900&size=31&pause=2000&color=00F716&center=true&vCenter=true&multiline=true&width=1000&height=100&lines=%F0%9F%94%B0Istiaq+Alam%F0%9F%94%B0)](https://git.io/typing-svg)
 <hr>
@@ -8,7 +8,7 @@ SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=900&size=31&p
 
 [![Typing
 SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=900&size=21&pause=2000&color=00F716&center=true&vCenter=true&multiline=true&width=1000&height=100&lines=%22Crafting+Innovative+Solutions%3A+Engineer+%7C+Designer+%7C+Developer%22)](https://git.io/typing-svg)
-
+    
 <!-- <h3 align="center">"Crafting Innovative Solutions: Engineer | Designer | Developer"</h3> -->
 
 <table width="10%" align="right">
@@ -20,7 +20,7 @@ SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=900&size=21&p
       <img src="https://tryhackme-badges.s3.amazonaws.com/TheSpyder.apk.png" />
     </td>
   </tr>
-</table>
+</table>   
 
 <p align="left"> <img   
     src="https://komarev.com/ghpvc/?username=istiaq-alam&label=Profile%20views&color=0e75b6&style=flat"
