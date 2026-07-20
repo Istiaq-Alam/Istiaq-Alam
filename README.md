@@ -27,7 +27,7 @@ ROLE        : CSE Student | Security Researcher | Dev
 STATUS      : [ ACTIVE ]  ██████████ 100%
 CLEARANCE   : Ethical Hacking & Penetration Testing
 ```
-   
+       
 ```bash
 [root@istiaq ~]# cat about.txt
 ```
