@@ -1,3 +1,9 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="dark_mode.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="light_mode.svg" />
+  <img alt="Istiaq-Alam's GitHub profile" src="dark_mode.svg" />
+</picture>
+
 <div align="center">
            
 ![logo](https://github.com/Istiaq-Alam/Istiaq-Alam/blob/main/Portfolio/assets/images/header-image2.png)
