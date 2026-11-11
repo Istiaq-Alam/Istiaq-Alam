@@ -104,6 +104,7 @@
         <a class="{{ request()->routeIs('admin.researches.*') ? 'active' : '' }}" href="{{ route('admin.researches.index') }}">Research</a>
         <a class="{{ request()->routeIs('admin.skills.*') ? 'active' : '' }}" href="{{ route('admin.skills.index') }}">Skills</a>
         <a class="{{ request()->routeIs('admin.certificates.*') ? 'active' : '' }}" href="{{ route('admin.certificates.index') }}">Certificates</a>
+        <a class="{{ request()->routeIs('admin.details.*') ? 'active' : '' }}" href="{{ route('admin.details.edit') }}">Edit Details</a>
         <a class="{{ request()->routeIs('admin.messages.*') ? 'active' : '' }}" href="{{ route('admin.messages.index') }}">Messages</a>
         <a href="{{ route('home') }}">View site</a>
       </nav>
@@ -130,6 +131,32 @@
     @yield('content')
   </main>
   @endauth
+  <script>
+    async function verifyAdminPassword(message) {
+      if (!confirm(message)) return false;
+      var password = prompt('Enter your admin password to confirm:');
+      if (!password) return false;
+      var response = await fetch('{{ route('admin.confirm-password') }}', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json', 'X-CSRF-TOKEN': '{{ csrf_token() }}' },
+        body: JSON.stringify({ admin_password: password }),
+      });
+      var data = await response.json();
+      if (!data.ok) alert('Incorrect admin password. Nothing was removed.');
+      return data.ok === true;
+    }
+    function askAdminPassword(form, message) {
+      if (!confirm(message)) return false;
+      var password = prompt('Enter your admin password to confirm:');
+      if (!password) return false;
+      var input = document.createElement('input');
+      input.type = 'hidden';
+      input.name = 'admin_password';
+      input.value = password;
+      form.appendChild(input);
+      return true;
+    }
+  </script>
   <script>
     (function () {
       var body = document.body, mobile = window.matchMedia('(max-width: 800px)');

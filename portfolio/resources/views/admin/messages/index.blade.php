@@ -23,7 +23,7 @@
                 <button class="btn secondary" type="submit">Mark read</button>
               </form>
             @endunless
-            <form method="POST" action="{{ route('admin.messages.destroy', $message) }}" class="inline" onsubmit="return confirm('Delete this message?')">
+            <form method="POST" action="{{ route('admin.messages.destroy', $message) }}" class="inline" onsubmit="return askAdminPassword(this, 'Delete this message?')">
               @csrf @method('DELETE')
               <button class="btn danger" type="submit">Delete</button>
             </form>

@@ -17,7 +17,7 @@
         <div class="item-meta">{{ $certificate->credential_url }}</div>
         <div class="item-actions">
           <a class="btn secondary" href="{{ route('admin.certificates.edit', $certificate) }}">Edit</a>
-          <form method="POST" action="{{ route('admin.certificates.destroy', $certificate) }}" class="inline" onsubmit="return confirm('Delete this certificate?')">
+          <form method="POST" action="{{ route('admin.certificates.destroy', $certificate) }}" class="inline" onsubmit="return askAdminPassword(this, 'Delete this certificate?')">
             @csrf @method('DELETE')
             <button class="btn danger" type="submit">Delete</button>
           </form>

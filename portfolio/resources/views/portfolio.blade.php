@@ -97,9 +97,9 @@
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Istiaq Alam">Istiaq Alam</h1>
+          <h1 class="name" title="{{ $details['name'] }}">{{ $details['name'] }}</h1>
           <!--Cyber Security Enthusiast & CSE Student-->
-          <p class="title">Web Development Intern,<br>Variation Communications Ltd </p>
+          <p class="title">{!! nl2br(e($details['job_title'])) !!}</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -259,21 +259,11 @@
 
         <section class="about-text">
           <p>
-            🔐 I'm a Computer Science & Engineering student with a deep
-            interest in Cyber Security and Ethical Hacking.
-            I enjoy discovering system vulnerabilities, understanding digital
-            threats, and crafting defenses that make
-            the web a safer place. Currently engaged in hands-on learning
-            through CTFs, simulation environments, and
-            open-source security projects.
+            {{ $details['about_1'] }}
           </p>
 
           <p>
-            I build secure and user-friendly websites that are functional and
-            visually striking. My approach integrates
-            clean coding practices with a strong focus on digital safety. I
-            aim to make every site not only eye-catching
-            but also aligned with cybersecurity best practices.
+            {{ $details['about_2'] }}
             <br> <br>
           <p align="center">"Securing the digital world, one line of code at a time."</p>
           </p>
@@ -479,54 +469,13 @@
           </div>
 
           <ol class="timeline-list">
-
+            @foreach ($details['education'] as $item)
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Notre Dame University
-                Bangladesh</h4>
-
-              <span>2022 — Present</span>
-
-              <p class="timeline-text">
-                I am currently pursuing a Bachelor of Science in Computer
-                Science and Engineering at Notre Dame
-                University Bangladesh, where I'm developing a strong
-                foundation in programming, system design, and
-                technology.
-              </p>
-
+              <h4 class="h4 timeline-item-title">{{ $item['title'] }}</h4>
+              <span>{!! nl2br(e($item['period'])) !!}</span>
+              <p class="timeline-text">{{ $item['text'] }}</p>
             </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Government Laboratory High
-                School & Collage</h4>
-
-              <span>2019 — 2021</span>
-
-              <p class="timeline-text">
-                I have completed my Higher Secondary Certificate (H.S.C) in 2021
-                from Government Laboratory High School &
-                College with GPA-5
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Motijheel Govt. Boys High
-                School</h4>
-
-              <span>2009 — 2019</span>
-
-              <p class="timeline-text">
-                I have completed my Secondary School Certificate (S.S.C) in 2019
-                from Motijheel Govt. Boys High School with
-                GPA-4.78
-              </p>
-
-            </li>
-
+            @endforeach
           </ol>
 
         </section>
@@ -542,53 +491,13 @@
           </div>
 
           <ol class="timeline-list">
-
+            @foreach ($details['experience'] as $item)
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Graphics Designer</h4>
-
-              <span>Notre Dame University Bangladesh Computer Club <br>
-                2024 — Present</span>
-
-              <p class="timeline-text">
-                Since 2023, I have been working as a Graphics Designer at the
-                Notre Dame University Bangladesh Computer
-                Club, where I design digital visuals for events, social media,
-                and official branding. I have a passion
-                for digital graphics art, with experience in both vector and
-                raster-based design tools
-              </p>
-
+              <h4 class="h4 timeline-item-title">{{ $item['title'] }}</h4>
+              <span>{!! nl2br(e($item['period'])) !!}</span>
+              <p class="timeline-text">{{ $item['text'] }}</p>
             </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Bash Terminal System</h4>
-
-              <span>2019 — Present</span>
-
-              <p class="timeline-text">
-                I have over five years of experience using Kali Linux and
-                other Bash-based terminal systems, which has
-                given me strong command-line and security knowledge.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2022 — Present</span>
-
-              <p class="timeline-text">
-                I also bring two years of hands-on experience in web design,
-                specializing in creating responsive and
-                user-friendly interfaces using HTML and CSS.
-              </p>
-
-            </li>
-
+            @endforeach
           </ol>
 
         </section>
@@ -739,7 +648,7 @@
           <ul class="blog-posts-list">
             @foreach ($researches as $research)
             <li class="blog-post-item">
-              <a href="{{ \App\Support\ImageUrl::resolve($research->research_url) ?? '#' }}" target="_blank">
+              <a href="{{ $research->pdf ? route('research.pdf', $research) : (\App\Support\ImageUrl::resolve($research->research_url) ?? '#') }}" target="_blank">
                 <figure class="blog-banner-box">
                   <img src="{{ $research->thumbnail_url }}" alt="{{ $research->title }}" loading="lazy">
                 </figure>

@@ -13,7 +13,7 @@ class CertificateController extends Controller
 {
     public function index(): View
     {
-        return view('admin.certificates.index', ['certificates' => Certificate::orderBy('sort_order')->get()]);
+        return view('admin.certificates.index', ['certificates' => Certificate::orderBy('sort_order')->orderByDesc('id')->get()]);
     }
 
     public function create(): View
@@ -23,7 +23,9 @@ class CertificateController extends Controller
 
     public function store(Request $request): RedirectResponse
     {
-        Certificate::create($this->validated($request, true));
+        $data = $this->validated($request, true);
+        Certificate::where('sort_order', '>=', $data['sort_order'])->increment('sort_order');
+        Certificate::create($data);
 
         return redirect()->route('admin.certificates.index')->with('success', 'Certificate created.');
     }

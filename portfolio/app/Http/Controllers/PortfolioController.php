@@ -7,6 +7,7 @@ use App\Models\Message;
 use App\Models\Project;
 use App\Models\Research;
 use App\Models\Skill;
+use App\Support\SiteDetails;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
@@ -16,11 +17,12 @@ class PortfolioController extends Controller
     public function index(): View
     {
         return view('portfolio', [
-            'projects' => Project::where('is_github_featured', false)->orderBy('sort_order')->get(),
-            'githubProjects' => Project::where('is_github_featured', true)->orderBy('sort_order')->get(),
-            'researches' => Research::orderBy('sort_order')->get(),
+            'details' => SiteDetails::current(),
+            'projects' => Project::where('is_github_featured', false)->orderBy('sort_order')->orderByDesc('id')->get(),
+            'githubProjects' => Project::where('is_github_featured', true)->orderBy('sort_order')->orderByDesc('id')->get(),
+            'researches' => Research::orderBy('sort_order')->orderByDesc('id')->get(),
             'skills' => Skill::orderBy('sort_order')->get(),
-            'certificates' => Certificate::orderBy('sort_order')->get(),
+            'certificates' => Certificate::orderBy('sort_order')->orderByDesc('id')->get(),
         ]);
     }
 

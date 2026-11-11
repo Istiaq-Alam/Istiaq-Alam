@@ -15,7 +15,7 @@ class ProjectController extends Controller
 
     public function index(): View
     {
-        return view('admin.projects.index', ['projects' => Project::orderBy('sort_order')->get()]);
+        return view('admin.projects.index', ['projects' => Project::orderBy('sort_order')->orderByDesc('id')->get()]);
     }
 
     public function create(): View
@@ -25,7 +25,11 @@ class ProjectController extends Controller
 
     public function store(Request $request): RedirectResponse
     {
-        Project::create($this->validated($request));
+        $data = $this->validated($request);
+        Project::where('is_github_featured', $data['is_github_featured'])
+            ->where('sort_order', '>=', $data['sort_order'])
+            ->increment('sort_order');
+        Project::create($data);
 
         return redirect()->route('admin.projects.index')->with('success', 'Project created.');
     }

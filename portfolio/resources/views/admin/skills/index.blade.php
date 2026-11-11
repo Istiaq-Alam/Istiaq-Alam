@@ -17,7 +17,7 @@
             <td>{{ $skill->percentage }}%</td>
             <td>
               <a class="btn secondary" href="{{ route('admin.skills.edit', $skill) }}">Edit</a>
-              <form method="POST" action="{{ route('admin.skills.destroy', $skill) }}" class="inline" onsubmit="return confirm('Delete this skill?')">
+              <form method="POST" action="{{ route('admin.skills.destroy', $skill) }}" class="inline" onsubmit="return askAdminPassword(this, 'Delete this skill?')">
                 @csrf @method('DELETE')
                 <button class="btn danger" type="submit">Delete</button>
               </form>

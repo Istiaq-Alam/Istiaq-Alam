@@ -17,6 +17,7 @@ class Research extends Model
         'description',
         'research_url',
         'thumbnail',
+        'pdf',
         'sort_order',
     ];
 

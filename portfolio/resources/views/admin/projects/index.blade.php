@@ -18,7 +18,7 @@
         <div class="item-meta">GitHub: {{ $project->is_github_featured ? 'Yes' : 'No' }}</div>
         <div class="item-actions">
           <a class="btn secondary" href="{{ route('admin.projects.edit', $project) }}">Edit</a>
-          <form method="POST" action="{{ route('admin.projects.destroy', $project) }}" class="inline" onsubmit="return confirm('Delete this project?')">
+          <form method="POST" action="{{ route('admin.projects.destroy', $project) }}" class="inline" onsubmit="return askAdminPassword(this, 'Delete this project?')">
             @csrf @method('DELETE')
             <button class="btn danger" type="submit">Delete</button>
           </form>

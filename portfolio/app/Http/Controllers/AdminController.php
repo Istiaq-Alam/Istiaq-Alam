@@ -7,9 +7,11 @@ use App\Models\Message;
 use App\Models\Project;
 use App\Models\Research;
 use App\Models\Skill;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\View\View;
 
 class AdminController extends Controller
@@ -42,6 +44,13 @@ class AdminController extends Controller
         $request->session()->regenerateToken();
 
         return redirect()->route('admin.login');
+    }
+
+    public function confirmPassword(Request $request): JsonResponse
+    {
+        $password = (string) $request->input('admin_password', '');
+
+        return response()->json(['ok' => $password !== '' && Hash::check($password, $request->user()->password)]);
     }
 
     public function dashboard(): View

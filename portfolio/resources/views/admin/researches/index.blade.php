@@ -18,7 +18,7 @@
         <div class="item-meta">Published: {{ $research->published_date }}</div>
         <div class="item-actions">
           <a class="btn secondary" href="{{ route('admin.researches.edit', $research) }}">Edit</a>
-          <form method="POST" action="{{ route('admin.researches.destroy', $research) }}" class="inline" onsubmit="return confirm('Delete this research?')">
+          <form method="POST" action="{{ route('admin.researches.destroy', $research) }}" class="inline" onsubmit="return askAdminPassword(this, 'Delete this research?')">
             @csrf @method('DELETE')
             <button class="btn danger" type="submit">Delete</button>
           </form>

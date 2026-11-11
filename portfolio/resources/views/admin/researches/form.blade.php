@@ -42,6 +42,12 @@
         </div>
       </div>
 
+      <label for="pdf">Research PDF (max 2MB)</label>
+      <input id="pdf" type="file" name="pdf" accept="application/pdf">
+      @if ($research->pdf)
+        <p class="item-meta"><a href="{{ route('research.pdf', $research) }}" target="_blank">View current PDF</a></p>
+      @endif
+
       <div class="actions">
         <button class="btn" type="submit">Save</button>
         <a class="btn secondary" href="{{ route('admin.researches.index') }}">Cancel</a>
