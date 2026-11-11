@@ -20,7 +20,7 @@
         </div>
         <div>
           <label for="published_date">Published date</label>
-          <input id="published_date" type="text" name="published_date" value="{{ old('published_date', $research->published_date) }}" required>
+          <input id="published_date" type="date" name="published_date" value="{{ old('published_date', $publishedDate) }}" required>
         </div>
       </div>
 
