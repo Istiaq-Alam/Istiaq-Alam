@@ -46,7 +46,7 @@
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
+    "@@context": "https://schema.org",
     "@type": "Person",
     "name": "Istiaq Alam",
     "url": "https://istiaq-alam.me",
@@ -297,8 +297,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
+                <img src="{{ asset('assets/images/icon-design.svg') }}" alt="design icon" width="40">
               </div>
 
               <div class="service-content-box">
@@ -375,139 +374,19 @@
           <h3 class="h3 testimonials-title">Github Projects</h3>
 
           <ul class="testimonials-list has-scrollbar">
-
+            @foreach ($githubProjects as $project)
             <li class="testimonials-item">
               <div class="content-card" data-testimonials-item>
-
                 <figure class="testimonials-avatar-box">
-                  <img src="{{ asset('assets/images/spp.png') }}" alt="spp" width="60" data-testimonials-avatar>
+                  <img src="{{ $project->thumbnail_url }}" alt="{{ $project->title }}" width="60" data-testimonials-avatar>
                 </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Student Academic Performance Prediction
-                </h4>
-
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>{{ $project->title }}</h4>
                 <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    AI-powered Student Performance Prediction System using Machine Learning, Explainable AI (SHAP/LIME),
-                    Risk Detection, and Human-in-the-Loop Feedback.
-                  </p>
+                  <p>{{ $project->description }}</p>
                 </div>
-
               </div>
             </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="{{ asset('assets/images/eds.png') }}" alt="Egg Drop Saga Game" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Egg Drop Saga Game</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Interactive OpenGL Game. A fun and dynamic 2D egg catching game built with C++ and OpenGL (GLUT).
-                    Control the bucket, catch falling eggs, and survive as long as possible while managing lives
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="{{ asset('assets/images/flpy.png') }}" alt="Flappy Bird Game" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Flappy Bird Game</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Flappy Bird game is made with Java. In this project, I
-                    added an interface that will show the GUI
-                    game named Flappy Bird. Users can click on the Play button
-                    to play the game. Then a new window will
-                    open for the Flappy Bird game. It is not my first Java
-                    Project on games.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="{{ asset('assets/images/logo.png') }}" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>NDUB student Management System</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    NDUB Student Management System is a comprehensive web
-                    application designed specifically for students
-                    of Notre Dame University Bangladesh to manage their
-                    academic information efficiently. It provides a
-                    user-friendly interface for students to access their
-                    results and percentages, while administrators
-                    can easily handle student data, course management, and
-                    result updates 📆📡
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="{{ asset('assets/images/def.webp') }}" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Ethical Hacking Demonstration</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    This project contains an HTML file for a "deface page,"
-                    often used in ethical hacking demonstrations
-                    or cybersecurity training to simulate website security
-                    breaches. The page mimics the appearance of a
-                    defaced website and serves as a tool for awareness and
-                    education about web application security.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="{{ asset('assets/images/snk.png') }}" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>2D Snake Game</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    A simple 2D snake game implemented in Java. This classic
-                    game allows players to control a snake with
-                    the objective of eating the red dot while avoiding
-                    collisions with the snake's own body and the game
-                    boundaries.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
+            @endforeach
           </ul>
 
         </section>
@@ -561,37 +440,13 @@
           <h3 class="h3 clients-title">Certificates</h3>
 
           <ul class="clients-list has-scrollbar">
-
+            @foreach ($certificates as $certificate)
             <li class="clients-item">
-              <a onclick="openModal('{{ asset('assets/images/Lead_Organizer_NDUB_CSE_FEST_2026.png') }}')">
-                <img src="{{ asset('assets/images/Lead_Organizer_NDUB_CSE_FEST_2026.png') }}" alt="client logo">
+              <a onclick="openModal('{{ $certificate->image_url }}')">
+                <img src="{{ $certificate->image_url }}" alt="{{ $certificate->title }}">
               </a>
             </li>
-            
-            <li class="clients-item">
-              <a onclick="openModal('{{ asset('assets/images/edgeCer.jpg') }}')">
-                <img src="{{ asset('assets/images/edgeCer.jpg') }}" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a onclick="openModal('{{ asset('assets/images/eweCer.jpg') }}')">
-                <img src="{{ asset('assets/images/eweCer.jpg') }}" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a onclick="openModal('{{ asset('assets/images/logo-1-color.png') }}')">
-                <img src="{{ asset('assets/images/logo-1-color.png') }}" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a onclick="openModal('{{ asset('assets/images/logo-2-color.png') }}')">
-                <img src="{{ asset('assets/images/logo-2-color.png') }}" alt="client logo">
-              </a>
-            </li>
-
+            @endforeach
           </ul>
           <!-- Modal -->
           <div id="imgModal" class="modals">
@@ -743,124 +598,17 @@
           <h3 class="h3 skills-title">My skills</h3>
 
           <ul class="skills-list content-card">
-
+            @foreach ($skills as $skill)
             <li class="skills-item">
-
               <div class="title-wrapper">
-                <h5 class="h5">Graphics designing</h5>
-                <data value="85">85%</data>
+                <h5 class="h5">{{ $skill->name }}</h5>
+                <data value="{{ $skill->percentage }}">{{ $skill->percentage }}%</data>
               </div>
-
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
+                <div class="skill-progress-fill" style="width: {{ $skill->percentage }}%;"></div>
               </div>
-
             </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web designing</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Mobile App development</h5>
-                <data value="30">30%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 30%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Shell</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Ethical Hacking</h5>
-                <data value="60">60%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 60%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Burp Suite</h5>
-                <data value="40">40%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 40%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Metasploit</h5>
-                <data value="25">25%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 25%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Nmap</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Wireshark</h5>
-                <data value="25">25%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 25%;"></div>
-              </div>
-
-            </li>
-
+            @endforeach
           </ul> <br> <br>
 
           <h3 class="h3 skills-title">Languages :</h3>
@@ -956,223 +704,20 @@
           </div>
 
           <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://student-performance-checker.pages.dev/">
-
+            @foreach ($projects as $project)
+            <li class="project-item  active" data-filter-item data-category="{{ strtolower($project->category) }}">
+              <a href="{{ $project->project_url ?? '#' }}">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
-                  <img src="{{ asset('assets/images/spp2.png') }}" alt="spp" loading="lazy">
+                  <img src="{{ $project->thumbnail_url }}" alt="{{ $project->title }}" loading="lazy">
                 </figure>
-
-                <h3 class="project-title">Student Performance Prediction & Academic Advisory</h3>
-
-                <p class="project-category">Web Applications</p>
-
+                <h3 class="project-title">{{ $project->title }}</h3>
+                <p class="project-category">{{ $project->sub_category ?? $project->category }}</p>
               </a>
             </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://egg-drop-saga.vercel.app/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{{ asset('assets/images/eggdropsaga.png') }}" alt="eggdropsaga" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Egg Drop Saga Game</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://ndubcc.pages.dev/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{{ asset('assets/images/project-9.png') }}" alt="ClubWebsite" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Computer Club Website</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://academic-note.vercel.app/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{{ asset('assets/images/acadm-web.jpeg') }}" alt="AcademicNote" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Academic Notes Manager</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="cybersecurity">
-              <a href="https://github.com/Istiaq-Alam/Failover-Network-Using-Redundant-Paths">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{{ asset('assets/images/fail.png') }}" alt="FailoverNetwork" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Failover Networks</h3>
-
-                <p class="project-category">CyberSecurity</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="learn">
-              <a href="https://github.com/Istiaq-Alam/Shell-Programming.git">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{{ asset('assets/images/shell.png') }}" alt="shellp" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Shell Programming</h3>
-
-                <p class="project-category">Learn</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/Istiaq-Alam/NDUB-Student-Management-System2.0.git">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{{ asset('assets/images/ndubsms.png') }}" alt="NDUBSMS" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">NDUB Student Management System</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="cybersecurity">
-              <a href="https://spyder-deface-page.vercel.app/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{{ asset('assets/images/deface.jpg') }}" alt="DefacePage" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Deface Page Demonstration</h3>
-
-                <p class="project-category">CyberSecurity</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://github.com/Istiaq-Alam/Flappy-Birds-Game.git">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{{ asset('assets/images/flppy.png') }}" alt="FlappyBird" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Flappy Bird Game</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="cybersecurity">
-              <a href="https://spydercehub.vercel.app">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{{ asset('assets/images/ethical-hacking.webp') }}" alt="EH" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Ethical Hacking</h3>
-
-                <p class="project-category">CyberSecurity</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://istiaq-alam.github.io/Money-Management-System/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{{ asset('assets/images/mms.jpg') }}" alt="money" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Money Management System</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://github.com/Istiaq-Alam/Snake-game-2D-.git">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{{ asset('assets/images/snk.jpg') }}" alt="SnakeGame" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Snake Game</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
+            @endforeach
           </ul>
 
         </section>
@@ -1192,254 +737,24 @@
         <section class="blog-posts">
 
           <ul class="blog-posts-list">
-
+            @foreach ($researches as $research)
             <li class="blog-post-item">
-              <a href="https://student-performance-checker.pages.dev" target="_blank">
-
+              <a href="{{ \App\Support\ImageUrl::resolve($research->research_url) ?? '#' }}" target="_blank">
                 <figure class="blog-banner-box">
-                  <img src="{{ asset('assets/images/spp2.png') }}" alt="student performance prediction" loading="lazy">
+                  <img src="{{ $research->thumbnail_url }}" alt="{{ $research->title }}" loading="lazy">
                 </figure>
-
                 <div class="blog-content">
-
                   <div class="blog-meta">
-                    <p class="blog-category">Machine Learning</p>
-
+                    <p class="blog-category">{{ $research->category }}</p>
                     <span class="dot"></span>
-
-                    <time datetime="2025-06-03">June 21, 2026</time>
+                    <time>{{ $research->published_date }}</time>
                   </div>
-
-                  <h3 class="h3 blog-item-title">Beyond Accuracy: Explainable and Actionable Machine Learning for
-                    Student Academic Performance Prediction</h3>
-
-                  <p class="blog-text">
-                    This system presents an intelligent Student
-                    Performance Prediction System that combines Machine Learning (ML), Explainable Artificial
-                    Intelligence (XAI), Goal-Based Academic Planning, and Human-in-the-Loop (HITL) feedback mechanisms.
-                  </p>
-
+                  <h3 class="h3 blog-item-title">{{ $research->title }}</h3>
+                  <p class="blog-text">{{ $research->description }}</p>
                 </div>
-
               </a>
             </li>
-
-            <li class="blog-post-item">
-              <a href="{{ asset('assets/pdf/Report Book Main.pdf') }}" target="_blank">
-
-                <figure class="blog-banner-box">
-                  <img src="{{ asset('assets/images/fail.png') }}" alt="Failover Network" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Networking</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2025-06-03">June 03, 2025</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Failover Network Using
-                    Redundant Paths</h3>
-
-                  <p class="blog-text">
-                    A highly available and resilient network by implementing
-                    Spanning Tree Protocol (STP) and Hot Standby Router
-                    Protocol (HSRP).
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="{{ asset('assets/pdf/Istiak_ID-05_Computer_Networks_Lab_Report-01.pdf') }}" target="_blank">
-
-                <figure class="blog-banner-box">
-                  <img src="{{ asset('assets/images/NAT.jpg') }}" alt="Failover Network" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Networking</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2025-05-07">May 07, 2025</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Dynamic NAT
-                    Configuration</h3>
-
-                  <p class="blog-text">
-                    Dynamic Network Address Translation (NAT) is a method used
-                    to map multiple private IP addresses to a pool of public
-                    IP addresses. This is particularly useful when you have a
-                    fixed number of public IP addresses.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#" target="_blank">
-
-                <figure class="blog-banner-box">
-                  <img src="{{ asset('assets/images/shellrep.png') }}" alt="Shell Programming" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Learn</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2025-02-27">Fab 27, 2025</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Learn Shell Programming</h3>
-
-                  <p class="blog-text">
-                    An interactive Shell Scripting learning tool designed to
-                    help beginners understand the basics of
-                    Shell Programming. Just need a Linux-based system or a
-                    terminal with Bash installed.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="{{ asset('assets/pdf/Invisible_Security_System_Microprocessor_Project_Report Book.pdf') }}" target="_blank">
-
-                <figure class="blog-banner-box">
-                  <img src="{{ asset('assets/images/ilss.png') }}" alt="ILSS" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Microprocessor</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2024-11-19">Nov 19, 2024</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Invisible Security
-                    System</h3>
-
-                  <p class="blog-text">
-                    The Invisible Security System project is designed to
-                    deliver a user-friendly
-                    solution for securing spaces by detecting unauthorized
-                    entry.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="{{ asset('assets/pdf/CSE-2106 Project Report.pdf') }}" target="_blank">
-
-                <figure class="blog-banner-box">
-                  <img src="{{ asset('assets/images/md.png') }}" alt="metal detector" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Hardware</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2024-06-04">Jun 04, 2024</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Matal Detector</h3>
-
-                  <p class="blog-text">
-                    A low cost metal detector project that can detect the presence of metal objects. It is designed for
-                    educational purposes and can be used in various applications, such as security screening and
-                    treasure hunting.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <!-- <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="{{ asset('assets/images/blog-5.jpg') }}" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of
-                    spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="{{ asset('assets/images/blog-6.jpg') }}" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat,
-                    velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-            -->
-
+            @endforeach
           </ul>
 
         </section>
@@ -1469,7 +784,16 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+          @if (session('success'))
+            <p class="form-success" role="status">{{ session('success') }}</p>
+          @endif
+
+          @if ($errors->any())
+            <p class="form-success" role="alert">{{ $errors->first() }}</p>
+          @endif
+
+          <form action="{{ route('contact.store') }}" method="POST" class="form" data-form>
+            @csrf
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>

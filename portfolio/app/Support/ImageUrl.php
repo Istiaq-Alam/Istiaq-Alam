@@ -2,6 +2,8 @@
 
 namespace App\Support;
 
+use Illuminate\Http\UploadedFile;
+
 class ImageUrl
 {
     /**
@@ -18,5 +20,13 @@ class ImageUrl
         }
 
         return asset($value);
+    }
+
+    /**
+     * Encode an uploaded image as a data URI so it persists inside the SQLite longText column.
+     */
+    public static function encodeUpload(UploadedFile $file): string
+    {
+        return 'data:'.$file->getMimeType().';base64,'.base64_encode($file->get());
     }
 }
