@@ -14,7 +14,7 @@ class DatabaseSeeder extends Seeder
             ['email' => 'istiak.apk@gmail.com'],
             [
                 'name' => 'Istiaq Alam',
-                'password' => Hash::make(env('ADMIN_PASSWORD', 'Admin@12345')),
+                'password' => Hash::make(env('ADMIN_PASSWORD', 'hahahapasswordNai-vai khuija laav nai XD')),
             ]
         );
 
