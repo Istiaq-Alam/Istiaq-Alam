@@ -823,6 +823,19 @@
 
   </main>
 
+  @if (session('success'))
+    <div class="toast" role="status" data-toast>
+      <ion-icon name="checkmark-circle"></ion-icon>
+      <span>{{ session('success') }}</span>
+    </div>
+    <script>
+      setTimeout(function () {
+        var toast = document.querySelector('[data-toast]');
+        if (toast) toast.classList.add('toast-hide');
+      }, 4000);
+    </script>
+  @endif
+
   <!--
     - custom js link
   -->

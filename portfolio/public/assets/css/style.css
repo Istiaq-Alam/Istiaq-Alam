@@ -1393,6 +1393,35 @@ textarea.form-input::-webkit-resizer {
   background: var(--bg-gradient-jet);
 }
 
+.toast {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: var(--onyx);
+  color: var(--light-gray);
+  border: 1px solid var(--orange-yellow-crayola);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  transition: opacity 0.4s ease;
+}
+
+.toast ion-icon {
+  color: var(--orange-yellow-crayola);
+  font-size: 20px;
+}
+
+.toast.toast-hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .form-btr {
   position: right;
   width: 30%;
