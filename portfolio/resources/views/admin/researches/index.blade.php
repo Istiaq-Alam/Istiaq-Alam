@@ -7,7 +7,7 @@
   <div class="actions" style="margin-bottom:12px"><a class="btn" href="{{ route('admin.researches.create') }}">+ Add Research</a></div>
   <div class="item-list">
     @forelse ($researches as $research)
-      <div class="item">
+      <div class="item item-card">
         <div class="item-head">
           <img class="item-thumb" src="{{ $research->thumbnail_url }}" alt="">
           <div style="min-width:0">

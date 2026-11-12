@@ -7,7 +7,7 @@
   <div class="actions" style="margin-bottom:12px"><a class="btn" href="{{ route('admin.projects.create') }}">+ Add Project</a></div>
   <div class="item-list">
     @forelse ($projects as $project)
-      <div class="item">
+      <div class="item item-card">
         <div class="item-head">
           <img class="item-thumb" src="{{ $project->thumbnail_url }}" alt="">
           <div style="min-width:0">

@@ -7,7 +7,7 @@
   <div class="actions" style="margin-bottom:12px"><a class="btn" href="{{ route('admin.certificates.create') }}">+ Add Certificate</a></div>
   <div class="item-list">
     @forelse ($certificates as $certificate)
-      <div class="item">
+      <div class="item item-card">
         <div class="item-head">
           <img class="item-thumb" src="{{ $certificate->image_url }}" alt="">
           <div style="min-width:0">
