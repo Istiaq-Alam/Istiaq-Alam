@@ -18,8 +18,8 @@
     .quick h2 { font-size:0.95rem; margin-bottom:8px; }
     .quick .actions { margin-top:0; gap:8px; }
     .site-preview { display:block; width:100%; box-sizing:border-box; max-width:none; margin-top:12px; padding:0; overflow:hidden; background:transparent; }
-    .site-preview iframe { display:block; width:200%; height:680px; border:0; transform:scale(.5); transform-origin:0 0; }
-    .site-preview .frame-wrap { width:100%; height:340px; overflow:hidden; }
+    .site-preview iframe { display:block; width:200%; height:1040px; border:0; transform:scale(.5); transform-origin:0 0; }
+    .site-preview .frame-wrap { width:100%; height:520px; overflow:hidden; }
   </style>
   <h1>Dashboard</h1>
   <div class="stats dash-stats">
