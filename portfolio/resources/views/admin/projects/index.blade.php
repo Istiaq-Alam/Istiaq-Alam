@@ -5,7 +5,7 @@
 @section('content')
   <style>
     .project-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:30px; margin-top:12px; }
-    .project-card { display:flex; flex-direction:column; min-width:0; }
+    .project-card { display:flex; flex-direction:column; min-width:0; background:transparent; }
     .project-card-img { position:relative; width:100%; height:200px; border-radius:16px; overflow:hidden; margin:0 0 15px; background:#000; }
     .project-card-img img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .25s ease; }
     .project-card:hover .project-card-img img { transform:scale(1.1); }

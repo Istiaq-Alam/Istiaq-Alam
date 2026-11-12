@@ -74,6 +74,9 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
+  <!-- Dashboard preview: ?preview=1 hides the rain and background -->
+  <script>if (location.search.indexOf('preview=1') !== -1) document.documentElement.classList.add('preview-mode');</script>
+  <style>.preview-mode, .preview-mode body { background: transparent !important; } .preview-mode #matrix { display: none !important; }</style>
 </head>
 
 <body oncontextmenu="return false;">

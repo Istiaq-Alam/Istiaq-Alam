@@ -37,7 +37,7 @@
     .table-wrap { overflow-x:auto; }
     .item-list { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:12px; }
     .item { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:10px; display:flex; flex-direction:column; gap:8px; min-width:0; }
-    .item-card { border:1px solid transparent; border-radius:14px; box-shadow:0 16px 30px hsla(192,79%,49%,.25); background:linear-gradient(to bottom right, hsla(128,95%,50%,.251) 0%, hsla(0,0%,99%,0) 100%) padding-box, hsl(120,3%,13%) padding-box, linear-gradient(to bottom right, hsl(101,83%,45%) 0%, hsla(0,0%,25%,0) 50%) border-box; }
+    .item-card { border:1px solid transparent; border-radius:14px; box-shadow:0 16px 30px hsla(192,79%,49%,.25); background:transparent padding-box, linear-gradient(to bottom right, hsl(101,83%,45%) 0%, hsla(0,0%,25%,0) 50%) border-box; }
     .item-head { display:flex; gap:10px; align-items:center; min-width:0; }
     .item-thumb { width:56px; height:56px; flex-shrink:0; border-radius:6px; object-fit:cover; background:var(--bg); border:1px solid var(--line); }
     .item-title { font-weight:600; font-size:0.92rem; line-height:1.3; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; }
