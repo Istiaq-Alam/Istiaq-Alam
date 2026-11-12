@@ -5,6 +5,13 @@
 @section('content')
   <style>
     .dash-stats { grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:10px; margin-bottom:12px; }
+    .dash-stats .stat, .quick {
+      border:1px solid transparent; border-radius:14px; box-shadow:0 16px 30px hsla(192,79%,49%,.25);
+      background:
+        linear-gradient(to bottom right, hsla(128,95%,50%,.251) 0%, hsla(0,0%,99%,0) 100%) padding-box,
+        hsl(120,3%,13%) padding-box,
+        linear-gradient(to bottom right, hsl(101,83%,45%) 0%, hsla(0,0%,25%,0) 50%) border-box;
+    }
     .dash-stats .stat { padding:10px 12px; margin-bottom:0; animation:rise .5s ease backwards; animation-delay:calc(var(--i) * 70ms); }
     .dash-stats .stat strong { font-size:1.2rem; font-variant-numeric:tabular-nums; }
     .quick { padding:10px 12px; margin-bottom:0; animation:rise .5s ease .35s backwards; }
