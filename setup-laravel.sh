@@ -95,15 +95,40 @@ fi
 
 # Database Connection Type
 echo -e "\nSelect Database Connection:"
-echo -e "  1) MySQL (Local / XAMPP Database server)"
+echo -e "  1) MySQL (Native Kali MySQL/MariaDB or XAMPP MySQL Engine)"
 echo -e "  2) SQLite (Zero configuration local file database)"
 read -r -p "Choose database type [1 or 2] [default: 1]: " DB_CHOICE
 DB_CHOICE=${DB_CHOICE:-1}
 
 if [ "$DB_CHOICE" = "2" ]; then
     DB_CONN="sqlite"
+    MYSQL_ENGINE="none"
 else
     DB_CONN="mysql"
+
+    if [ "$ENV_MODE" = "xampp" ]; then
+        DEFAULT_MYSQL_ENGINE="2"
+    else
+        DEFAULT_MYSQL_ENGINE="1"
+    fi
+
+    echo -e "\nSelect MySQL Engine:"
+    echo -e "  1) ${BOLD}Native Kali Linux MySQL/MariaDB${NC} -> Uses system MySQL/MariaDB service + 'php artisan serve'"
+    echo -e "  2) ${BOLD}XAMPP's MySQL Engine${NC}            -> Uses /opt/lampp MySQL + 'php artisan serve' (or XAMPP Apache)"
+    read -r -p "Choose MySQL engine [1 or 2] [default: ${DEFAULT_MYSQL_ENGINE}]: " MYSQL_ENGINE_CHOICE
+    MYSQL_ENGINE_CHOICE=${MYSQL_ENGINE_CHOICE:-$DEFAULT_MYSQL_ENGINE}
+
+    if [ "$MYSQL_ENGINE_CHOICE" = "2" ]; then
+        MYSQL_ENGINE="xampp_mysql"
+        if [ ! -f "/opt/lampp/lampp" ]; then
+            echo -e "${RED}[ERROR] XAMPP is not found at /opt/lampp/lampp.${NC}"
+            echo -e "Please install XAMPP or select Option 1 for Native Kali MySQL/MariaDB."
+            exit 1
+        fi
+    else
+        MYSQL_ENGINE="native_mysql"
+    fi
+
     read -r -p "Enter MySQL Database Name [default: ${DEFAULT_DB_NAME}]: " DB_NAME
     DB_NAME=${DB_NAME:-$DEFAULT_DB_NAME}
 
@@ -130,6 +155,7 @@ echo -e " Architecture   : ${BOLD}${ENV_MODE^^}${NC} (PHP ${TARGET_PHP})"
 echo -e " Laravel Pkg    : ${LARAVEL_PKG}"
 echo -e " DB Connection  : ${DB_CONN}"
 if [ "$DB_CONN" = "mysql" ]; then
+echo -e " MySQL Engine   : $( [ "$MYSQL_ENGINE" = "xampp_mysql" ] && echo "XAMPP MySQL (/opt/lampp)" || echo "Native Kali MySQL/MariaDB" )"
 echo -e " DB Host:Port   : ${DB_HOST}:${DB_PORT}"
 echo -e " DB Name        : ${DB_NAME}"
 echo -e " DB User        : ${DB_USER}"
@@ -149,23 +175,59 @@ fi
 if [ "$DB_CONN" = "mysql" ]; then
     echo -e "\n${CYAN}${BOLD}[Step 4/6] Initializing MySQL Database...${NC}"
     
-    if [ "$ENV_MODE" = "xampp" ]; then
-        sudo /opt/lampp/lampp start
+    if [ "$MYSQL_ENGINE" = "xampp_mysql" ]; then
+        # Stop native Kali MySQL/MariaDB if running so port 3306 is free for XAMPP MySQL
+        if systemctl is-active --quiet mysql 2>/dev/null || systemctl is-active --quiet mariadb 2>/dev/null; then
+            echo -e "${YELLOW}[INFO] Stopping native MySQL service to free port ${DB_PORT} for XAMPP MySQL...${NC}"
+            sudo systemctl stop mysql 2>/dev/null || sudo systemctl stop mariadb 2>/dev/null || true
+        fi
+
+        if [ "$ENV_MODE" = "xampp" ]; then
+            sudo /opt/lampp/lampp start
+        else
+            echo -e "${YELLOW}[INFO] Starting XAMPP MySQL Engine for 'php artisan serve'...${NC}"
+            sudo /opt/lampp/lampp startmysql
+        fi
         MYSQL_BIN="/opt/lampp/bin/mysql"
+
+        if [ -z "$DB_PASS" ]; then
+            "$MYSQL_BIN" -h "$DB_HOST" -P "$DB_PORT" -u "$DB_USER" -e "CREATE DATABASE IF NOT EXISTS \`${DB_NAME}\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+        else
+            "$MYSQL_BIN" -h "$DB_HOST" -P "$DB_PORT" -u "$DB_USER" -p"$DB_PASS" -e "CREATE DATABASE IF NOT EXISTS \`${DB_NAME}\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+        fi
     else
+        # Native Kali Linux MySQL / MariaDB Engine
+        if ! command -v mysql &>/dev/null; then
+            echo -e "${YELLOW}[WARN] Native MySQL/MariaDB not found. Installing default-mysql-server...${NC}"
+            sudo apt update && sudo apt install -y default-mysql-server
+        fi
+
+        # Stop XAMPP MySQL if running so port 3306 is free for Native Kali MySQL
+        if [ -f "/opt/lampp/lampp" ]; then
+            sudo /opt/lampp/lampp stopmysql >/dev/null 2>&1 || true
+        fi
+
+        echo -e "${YELLOW}[INFO] Starting Native Kali Linux MySQL/MariaDB service...${NC}"
+        sudo systemctl start mysql 2>/dev/null || sudo systemctl start mariadb 2>/dev/null || sudo service mysql start
+
         MYSQL_BIN="mysql"
+
+        # Create database & ensure TCP (127.0.0.1) access works for Laravel Artisan
+        if [ -z "$DB_PASS" ]; then
+            "$MYSQL_BIN" -h "$DB_HOST" -P "$DB_PORT" -u "$DB_USER" -e "CREATE DATABASE IF NOT EXISTS \`${DB_NAME}\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;" 2>/dev/null || \
+            sudo mysql -e "CREATE DATABASE IF NOT EXISTS \`${DB_NAME}\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci; ALTER USER '${DB_USER}'@'localhost' IDENTIFIED VIA mysql_native_password USING PASSWORD(''); GRANT ALL PRIVILEGES ON *.* TO '${DB_USER}'@'127.0.0.1' IDENTIFIED BY '' WITH GRANT OPTION; FLUSH PRIVILEGES;"
+        else
+            "$MYSQL_BIN" -h "$DB_HOST" -P "$DB_PORT" -u "$DB_USER" -p"$DB_PASS" -e "CREATE DATABASE IF NOT EXISTS \`${DB_NAME}\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;" 2>/dev/null || \
+            sudo mysql -e "CREATE DATABASE IF NOT EXISTS \`${DB_NAME}\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci; ALTER USER '${DB_USER}'@'localhost' IDENTIFIED VIA mysql_native_password USING PASSWORD('${DB_PASS}'); GRANT ALL PRIVILEGES ON *.* TO '${DB_USER}'@'127.0.0.1' IDENTIFIED BY '${DB_PASS}' WITH GRANT OPTION; FLUSH PRIVILEGES;"
+        fi
     fi
 
-    if [ -z "$DB_PASS" ]; then
-        "$MYSQL_BIN" -h "$DB_HOST" -P "$DB_PORT" -u "$DB_USER" -e "CREATE DATABASE IF NOT EXISTS \`${DB_NAME}\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;" 2>/dev/null || \
-        mysql -h "$DB_HOST" -P "$DB_PORT" -u "$DB_USER" -e "CREATE DATABASE IF NOT EXISTS \`${DB_NAME}\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
-    else
-        "$MYSQL_BIN" -h "$DB_HOST" -P "$DB_PORT" -u "$DB_USER" -p"$DB_PASS" -e "CREATE DATABASE IF NOT EXISTS \`${DB_NAME}\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;" 2>/dev/null || \
-        mysql -h "$DB_HOST" -P "$DB_PORT" -u "$DB_USER" -p"$DB_PASS" -e "CREATE DATABASE IF NOT EXISTS \`${DB_NAME}\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
-    fi
     echo -e "${GREEN}[OK]${NC} Database '${DB_NAME}' created successfully."
 else
     echo -e "\n${CYAN}${BOLD}[Step 4/6] Skipping external database setup (SQLite selected).${NC}"
+    if [ "$ENV_MODE" = "xampp" ]; then
+        sudo /opt/lampp/lampp startapache
+    fi
 fi
 
 # ------------------------------------------------------------------------------
@@ -245,6 +307,9 @@ echo -e "${GREEN}${BOLD}      SUCCESS! Your Laravel Application is Ready to Use 
 echo -e "${GREEN}${BOLD}==============================================================${NC}"
 echo -e " Project Location : ${YELLOW}${CURRENT_DIR}/${PROJECT_FOLDER}${NC}"
 echo -e " Architecture Mode: ${BOLD}${ENV_MODE^^}${NC} (PHP Target: ${TARGET_PHP})"
+if [ "$DB_CONN" = "mysql" ]; then
+echo -e " MySQL Engine     : ${BOLD}$( [ "$MYSQL_ENGINE" = "xampp_mysql" ] && echo "XAMPP MySQL (/opt/lampp/lampp startmysql)" || echo "Native Kali MySQL (sudo systemctl start mysql)" )${NC}"
+fi
 if [ "$ENV_MODE" = "xampp" ]; then
 echo -e " Browser URL      : ${CYAN}http://localhost/${PROJECT_FOLDER}/public${NC}"
 echo -e " phpMyAdmin       : ${CYAN}http://localhost/phpmyadmin${NC}"
