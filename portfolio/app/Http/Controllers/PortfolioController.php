@@ -18,7 +18,7 @@ class PortfolioController extends Controller
     {
         return view('portfolio', [
             'details' => SiteDetails::current(),
-            'projects' => Project::where('is_github_featured', false)->orderBy('sort_order')->orderByDesc('id')->get(),
+            'projects' => Project::orderBy('sort_order')->orderByDesc('id')->get(),
             'githubProjects' => Project::where('is_github_featured', true)->orderBy('sort_order')->orderByDesc('id')->get(),
             'researches' => Research::orderBy('sort_order')->orderByDesc('id')->get(),
             'skills' => Skill::orderBy('sort_order')->get(),

@@ -18,8 +18,8 @@
     .quick h2 { font-size:0.95rem; margin-bottom:8px; }
     .quick .actions { margin-top:0; gap:8px; }
     .site-preview { display:block; width:100%; box-sizing:border-box; max-width:none; margin-top:12px; padding:0; overflow:hidden; background:transparent; }
-    .site-preview iframe { display:block; width:200%; height:1040px; border:0; transform:scale(.5); transform-origin:0 0; }
-    .site-preview .frame-wrap { width:100%; height:520px; overflow:hidden; }
+    .site-preview .frame-wrap { position:relative; width:100%; aspect-ratio:1280 / 760; overflow:hidden; border-radius:14px; }
+    .site-preview iframe { position:absolute; top:0; left:0; width:1280px; height:760px; border:0; transform-origin:0 0; transform:scale(var(--preview-scale, .5)); }
   </style>
   <h1>Dashboard</h1>
   <div class="stats dash-stats">
@@ -40,13 +40,20 @@
   </div>
 
   <div class="card site-preview">
-    <div class="frame-wrap">
+    <div class="frame-wrap" id="site-preview-wrap">
       <iframe src="{{ route('home') }}?preview=1" title="Preview of the main portfolio page" loading="lazy" tabindex="-1"></iframe>
     </div>
   </div>
 
   <script>
     (function () {
+      var wrap = document.getElementById('site-preview-wrap');
+      function fitPreview() {
+        wrap.style.setProperty('--preview-scale', wrap.clientWidth / 1280);
+      }
+      fitPreview();
+      window.addEventListener('resize', fitPreview);
+
       if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
       document.querySelectorAll('[data-count]').forEach(function (el) {
         var end = parseInt(el.dataset.count, 10) || 0;
