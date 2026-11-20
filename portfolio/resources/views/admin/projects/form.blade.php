@@ -42,6 +42,11 @@
           <img id="thumbnail-preview" class="preview" src="{{ $project->thumbnail_url }}" alt="" @if (! $project->thumbnail_url) hidden @endif>
         </div>
         <div>
+          <label for="square_image">GitHub square image (optional, jpeg, png, webp, gif, svg; max 2MB)</label>
+          <input id="square_image" type="file" name="square_image" accept="image/*" onchange="previewImage(this, 'square-image-preview')">
+          <img id="square-image-preview" class="preview" src="{{ $project->square_image_url }}" alt="" @if (! $project->square_image) hidden @endif>
+        </div>
+        <div>
           <label for="sort_order">Sort order</label>
           <input id="sort_order" type="number" name="sort_order" value="{{ old('sort_order', $project->sort_order) }}">
           <label style="display:flex;gap:8px;align-items:center">
@@ -59,8 +64,8 @@
   </div>
 
   <script>
-    function previewImage(input) {
-      const img = document.getElementById('thumbnail-preview');
+    function previewImage(input, previewId = 'thumbnail-preview') {
+      const img = document.getElementById(previewId);
       if (input.files && input.files[0]) {
         img.src = URL.createObjectURL(input.files[0]);
         img.hidden = false;

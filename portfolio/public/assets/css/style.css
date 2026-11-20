@@ -684,6 +684,13 @@ main {
   margin-bottom: 7px;
 }
 
+.github-square-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
 .testimonials-text {
   color: var(--light-gray);
   font-size: var(--fs-6);

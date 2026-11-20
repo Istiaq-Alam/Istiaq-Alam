@@ -107,6 +107,7 @@
         <a class="{{ request()->routeIs('admin.certificates.*') ? 'active' : '' }}" href="{{ route('admin.certificates.index') }}">Certificates</a>
         <a class="{{ request()->routeIs('admin.details.*') ? 'active' : '' }}" href="{{ route('admin.details.edit') }}">Edit Details</a>
         <a class="{{ request()->routeIs('admin.messages.*') ? 'active' : '' }}" href="{{ route('admin.messages.index') }}">Messages</a>
+        <a class="{{ request()->routeIs('admin.password.*') ? 'active' : '' }}" href="{{ route('admin.password.edit') }}">Change Password</a>
       </nav>
       <form method="POST" action="{{ route('admin.logout') }}">
         @csrf

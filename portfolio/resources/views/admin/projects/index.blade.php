@@ -5,14 +5,14 @@
 @section('content')
   <style>
     .project-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:30px; margin-top:12px; }
-    .project-card { display:flex; flex-direction:column; min-width:0; background:transparent; }
+    .project-card { display:flex; flex-direction:column; min-width:0; background:hsl(0, 0%, 0%); border:1px solid hsl(0, 0%, 22%); border-radius:20px; padding:15px; box-shadow:-4px 8px 24px hsla(106, 100%, 50%, 0.712); }
     .project-card-img { position:relative; width:100%; height:200px; border-radius:16px; overflow:hidden; margin:0 0 15px; background:#000; }
     .project-card-img img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .25s ease; }
     .project-card:hover .project-card-img img { transform:scale(1.1); }
-    .project-card-title { margin:0 0 4px 10px; color:hsl(177,100%,50%); font-size:15px; font-weight:400; line-height:1.3; text-transform:capitalize; overflow-wrap:anywhere; }
-    .project-card-category { margin:0 0 0 10px; color:hsla(128,100%,50%,0.658); font-size:14px; font-weight:300; overflow-wrap:anywhere; }
-    .project-card-meta { margin:6px 0 0 10px; color:var(--muted); font-size:0.8rem; }
-    .project-card-actions { margin:auto 0 0 10px; padding-top:10px; display:flex; gap:6px; flex-wrap:wrap; align-items:center; }
+    .project-card-title { margin:0 0 4px 0; color:hsl(177,100%,50%); font-size:15px; font-weight:400; line-height:1.3; text-transform:capitalize; overflow-wrap:anywhere; }
+    .project-card-category { margin:0; color:hsla(128,100%,50%,0.658); font-size:14px; font-weight:300; overflow-wrap:anywhere; }
+    .project-card-meta { margin:6px 0 0 0; color:var(--muted); font-size:0.8rem; }
+    .project-card-actions { margin:auto 0 0 0; padding-top:10px; display:flex; gap:6px; flex-wrap:wrap; align-items:center; }
   </style>
 
   <h1>Projects</h1>

@@ -371,7 +371,7 @@
             <li class="testimonials-item">
               <div class="content-card" data-testimonials-item>
                 <figure class="testimonials-avatar-box">
-                  <img src="{{ $project->thumbnail_url }}" alt="{{ $project->title }}" width="60" data-testimonials-avatar>
+                  <img src="{{ $project->square_image_url }}" alt="{{ $project->title }}" width="60" height="60" class="github-square-img" data-testimonials-avatar>
                 </figure>
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>{{ $project->title }}</h4>
                 <div class="testimonials-text" data-testimonials-text>

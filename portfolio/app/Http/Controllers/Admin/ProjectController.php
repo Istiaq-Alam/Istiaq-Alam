@@ -62,6 +62,7 @@ class ProjectController extends Controller
             'description' => ['nullable', 'string'],
             'project_url' => ['nullable', 'string', 'max:2048'],
             'thumbnail' => ['nullable', 'image', 'mimes:jpeg,png,jpg,webp,gif,svg', 'max:2048'],
+            'square_image' => ['nullable', 'image', 'mimes:jpeg,png,jpg,webp,gif,svg', 'max:2048'],
             'is_github_featured' => ['nullable', 'boolean'],
             'sort_order' => ['nullable', 'integer'],
         ]);
@@ -70,6 +71,12 @@ class ProjectController extends Controller
             $data['thumbnail'] = ImageUrl::encodeUpload($request->file('thumbnail'));
         } else {
             unset($data['thumbnail']);
+        }
+
+        if ($request->hasFile('square_image')) {
+            $data['square_image'] = ImageUrl::encodeUpload($request->file('square_image'));
+        } else {
+            unset($data['square_image']);
         }
 
         $data['is_github_featured'] = $request->boolean('is_github_featured');

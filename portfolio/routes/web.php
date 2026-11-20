@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\CertificateController;
 use App\Http\Controllers\Admin\MessageController;
+use App\Http\Controllers\Admin\PasswordController;
 use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\ResearchController;
 use App\Http\Controllers\Admin\SiteDetailsController;
@@ -35,5 +36,8 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::get('/messages', [MessageController::class, 'index'])->name('messages.index');
         Route::patch('/messages/{message}/read', [MessageController::class, 'markRead'])->name('messages.read');
         Route::delete('/messages/{message}', [MessageController::class, 'destroy'])->name('messages.destroy');
+
+        Route::get('/password', [PasswordController::class, 'edit'])->name('password.edit');
+        Route::put('/password', [PasswordController::class, 'update'])->name('password.update');
     });
 });

@@ -15,6 +15,7 @@ class Project extends Model
         'description',
         'project_url',
         'thumbnail',
+        'square_image',
         'is_github_featured',
         'sort_order',
     ];
@@ -30,5 +31,10 @@ class Project extends Model
     protected function thumbnailUrl(): Attribute
     {
         return Attribute::get(fn () => ImageUrl::resolve($this->thumbnail));
+    }
+
+    protected function squareImageUrl(): Attribute
+    {
+        return Attribute::get(fn () => ImageUrl::resolve($this->square_image ?: $this->thumbnail));
     }
 }
