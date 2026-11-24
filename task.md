@@ -8,7 +8,7 @@ You are an expert Full-Stack PHP & Laravel Engineer. Your task is to convert my 
 - **Rule**: Do NOT modify or delete files inside `./static`. Copy and adapt everything into `./portfolio`.
 
 ---
-
+ 
 ### 2. STEP-BY-STEP EXECUTION PLAN
 
 #### PHASE 1: Inspect `./static` & Migrate Frontend Assets
