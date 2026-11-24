@@ -3,6 +3,7 @@
 namespace App\Support;
 
 use Illuminate\Http\UploadedFile;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Str;
 
 class ImageUrl
@@ -24,15 +25,28 @@ class ImageUrl
     }
 
     /**
-     * Save an uploaded image under public/assets/uploads and return its relative path.
-     * Storing files (not base64 in SQLite) keeps the rendered page small enough for Vercel.
+     * Upload an image to Vercel Blob when a token is configured, otherwise to public/assets/uploads.
+     * Vercel's filesystem is read-only, so Blob is required for uploads to persist in production.
      */
     public static function storeUpload(UploadedFile $file): string
     {
         $name = Str::random(20).'.'.$file->extension();
 
-        $file->move(public_path('assets/uploads'), $name);
+        $token = env('BLOB_READ_WRITE_TOKEN');
 
-        return 'assets/uploads/'.$name;
+        if (! $token) {
+            $file->move(public_path('assets/uploads'), $name);
+
+            return 'assets/uploads/'.$name;
+        }
+
+        $response = Http::withToken($token)
+            ->withHeaders(['x-api-version' => '7', 'x-content-type' => $file->getMimeType(), 'x-add-random-suffix' => '0'])
+            ->withBody(file_get_contents($file->getRealPath()), $file->getMimeType())
+            ->put('https://blob.vercel-storage.com/uploads/'.$name);
+
+        $response->throw();
+
+        return $response->json('url');
     }
 }
