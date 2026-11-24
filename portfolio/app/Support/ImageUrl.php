@@ -3,6 +3,7 @@
 namespace App\Support;
 
 use Illuminate\Http\UploadedFile;
+use Illuminate\Support\Str;
 
 class ImageUrl
 {
@@ -23,10 +24,15 @@ class ImageUrl
     }
 
     /**
-     * Encode an uploaded image as a data URI so it persists inside the SQLite longText column.
+     * Save an uploaded image under public/assets/uploads and return its relative path.
+     * Storing files (not base64 in SQLite) keeps the rendered page small enough for Vercel.
      */
-    public static function encodeUpload(UploadedFile $file): string
+    public static function storeUpload(UploadedFile $file): string
     {
-        return 'data:'.$file->getMimeType().';base64,'.base64_encode($file->get());
+        $name = Str::random(20).'.'.$file->extension();
+
+        $file->move(public_path('assets/uploads'), $name);
+
+        return 'assets/uploads/'.$name;
     }
 }

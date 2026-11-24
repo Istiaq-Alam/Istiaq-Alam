@@ -59,7 +59,7 @@ class CertificateController extends Controller
         ]);
 
         if ($request->hasFile('image')) {
-            $data['image'] = ImageUrl::encodeUpload($request->file('image'));
+            $data['image'] = ImageUrl::storeUpload($request->file('image'));
         } else {
             unset($data['image']);
         }

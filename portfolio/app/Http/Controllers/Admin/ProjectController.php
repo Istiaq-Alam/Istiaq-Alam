@@ -68,13 +68,13 @@ class ProjectController extends Controller
         ]);
 
         if ($request->hasFile('thumbnail')) {
-            $data['thumbnail'] = ImageUrl::encodeUpload($request->file('thumbnail'));
+            $data['thumbnail'] = ImageUrl::storeUpload($request->file('thumbnail'));
         } else {
             unset($data['thumbnail']);
         }
 
         if ($request->hasFile('square_image')) {
-            $data['square_image'] = ImageUrl::encodeUpload($request->file('square_image'));
+            $data['square_image'] = ImageUrl::storeUpload($request->file('square_image'));
         } else {
             unset($data['square_image']);
         }

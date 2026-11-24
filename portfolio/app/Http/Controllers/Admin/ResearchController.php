@@ -81,7 +81,7 @@ class ResearchController extends Controller
         ]);
 
         if ($request->hasFile('thumbnail')) {
-            $data['thumbnail'] = ImageUrl::encodeUpload($request->file('thumbnail'));
+            $data['thumbnail'] = ImageUrl::storeUpload($request->file('thumbnail'));
         } else {
             unset($data['thumbnail']);
         }
