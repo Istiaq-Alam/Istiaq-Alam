@@ -13,7 +13,10 @@ class SiteDetailsController extends Controller
 {
     public function edit(): View
     {
-        return view('admin.details', ['details' => SiteDetails::current()]);
+        return view('admin.details', [
+            'details' => SiteDetails::current(),
+            'photo' => SiteDetails::photoUrl() ?? asset('assets/images/istiaq.jpg'),
+        ]);
     }
 
     public function update(Request $request): RedirectResponse

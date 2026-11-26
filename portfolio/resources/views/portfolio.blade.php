@@ -50,7 +50,7 @@
     "@type": "Person",
     "name": @json($details['name']),
     "url": "https://istiaq-alam.me",
-    "image": "https://istiaq-alam.me/assets/images/istiaq.jpg",
+    "image": @json($photo),
     "jobTitle": @json($headline),
     "description": @json($summary),
     "email": "istiak.apk@gmail.com",
@@ -96,7 +96,7 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="{{ asset('assets/images/istiaq.jpg') }}" alt="Istiaq Alam" width="80">
+          <img src="{{ $photo }}" alt="{{ $details['name'] }}" width="80">
         </figure>
 
         <div class="info-content">

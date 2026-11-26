@@ -10,12 +10,14 @@ use App\Http\Controllers\Admin\SiteDetailsController;
 use App\Http\Controllers\Admin\SkillController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\ProfilePhotoController;
 use App\Http\Middleware\ConfirmAdminPassword;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PortfolioController::class, 'index'])->name('home');
 Route::post('/contact', [PortfolioController::class, 'sendMessage'])->name('contact.store');
 Route::get('/research/{research}/pdf', [ResearchController::class, 'pdf'])->name('research.pdf');
+Route::get('/profile-photo', [ProfilePhotoController::class, 'show'])->name('profile-photo.show');
 
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('/login', [AdminController::class, 'showLogin'])->name('login');
@@ -34,6 +36,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::get('/details', [SiteDetailsController::class, 'edit'])->name('details.edit');
         Route::put('/details', [SiteDetailsController::class, 'update'])->name('details.update');
         Route::post('/og-image', [OgImageController::class, 'store'])->name('og-image.store');
+        Route::post('/photo', [ProfilePhotoController::class, 'store'])->name('photo.store');
 
         Route::get('/messages', [MessageController::class, 'index'])->name('messages.index');
         Route::patch('/messages/{message}/read', [MessageController::class, 'markRead'])->name('messages.read');

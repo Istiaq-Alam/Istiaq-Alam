@@ -12,6 +12,8 @@ class SiteDetails
 
     public const OG_IMAGE_KEY = 'og_image';
 
+    public const PHOTO_KEY = 'photo';
+
     /**
      * Current page text, used when nothing has been saved yet.
      */
@@ -61,10 +63,49 @@ class SiteDetails
      */
     public static function ogImageUrl(): ?string
     {
-        $saved = SiteSetting::valueFor(self::OG_IMAGE_KEY);
-        $url = is_array($saved) ? ($saved['url'] ?? null) : null;
+        $stored = self::storedImage(self::OG_IMAGE_KEY);
 
-        return is_string($url) && $url !== '' ? ImageUrl::resolve($url) : null;
+        return $stored === null ? null : ImageUrl::resolve($stored);
+    }
+
+    /**
+     * Absolute URL of the uploaded profile image, or null when the bundled one is used.
+     */
+    public static function photoUrl(): ?string
+    {
+        $stored = self::storedPhoto();
+
+        return $stored === null ? null : ImageUrl::resolve($stored);
+    }
+
+    /**
+     * Raw stored value: a bundled path locally, a blob URL in production.
+     */
+    public static function storedPhoto(): ?string
+    {
+        return self::storedImage(self::PHOTO_KEY);
+    }
+
+    /**
+     * Short fingerprint of the stored photo, used to bust caches when it changes.
+     */
+    public static function photoVersion(): string
+    {
+        $stored = self::storedPhoto();
+
+        return $stored === null ? 'default' : substr(md5($stored), 0, 8);
+    }
+
+    /**
+     * Store a new profile image and return its absolute URL.
+     */
+    public static function storePhoto(UploadedFile $file): string
+    {
+        $stored = ImageUrl::storeUpload($file);
+
+        SiteSetting::store(self::PHOTO_KEY, ['url' => $stored]);
+
+        return (string) ImageUrl::resolve($stored);
     }
 
     /**
@@ -77,6 +118,14 @@ class SiteDetails
         SiteSetting::store(self::OG_IMAGE_KEY, ['url' => $stored]);
 
         return (string) ImageUrl::resolve($stored);
+    }
+
+    private static function storedImage(string $key): ?string
+    {
+        $saved = SiteSetting::valueFor($key);
+        $url = is_array($saved) ? ($saved['url'] ?? null) : null;
+
+        return is_string($url) && $url !== '' ? $url : null;
     }
 
     /**

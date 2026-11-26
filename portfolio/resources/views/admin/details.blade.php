@@ -22,6 +22,23 @@
     .resume-list { display:flex; flex-direction:column; gap:12px; margin-bottom:12px; }
   </style>
   <div class="card">
+    <h2>Profile image</h2>
+    <p class="item-meta">
+      Shown in the sidebar and on the social card. A portrait photo works best; JPEG, PNG or WebP up to 8&nbsp;MB.
+    </p>
+    <div style="display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap;margin-top:10px">
+      <img id="profile-photo-preview" src="{{ $photo }}" alt="Current profile image"
+        style="max-width:160px;height:auto;border-radius:8px;border:1px solid var(--line);background:var(--bg)">
+      <div style="flex:1;min-width:240px">
+        <label for="profile_photo">New image</label>
+        <input id="profile_photo" type="file" accept="image/jpeg,image/png,image/webp">
+        <p id="profile-photo-status" class="item-meta" role="status" aria-live="polite">
+          Choosing a file replaces the current image right away.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
     <form id="details-form" method="POST" action="{{ route('admin.details.update') }}">
       @csrf
       @method('PUT')
@@ -138,12 +155,12 @@
   <script src="{{ asset('assets/js/og-card.js') }}"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      if (!window.OgCard) return;
+      var canRenderCard = !!window.OgCard;
 
       var config = {
         endpoint: @json(route('admin.og-image.store')),
         csrf: @json(csrf_token()),
-        photo: @json(asset('assets/images/istiaq.jpg')),
+        photo: @json('/profile-photo?v='.\App\Support\SiteDetails::photoVersion()),
         name: @json($details['name']),
         jobTitle: @json($details['job_title']),
         summary: @json(\App\Support\SiteDetails::summary($details, 220)),
@@ -151,41 +168,98 @@
       };
 
       var preview = document.getElementById('og-card-preview');
+      var timer = null;
 
-      if (preview) {
-        var fields = { name: '#name', jobTitle: '#job_title', summary: '#about_1' };
-        var timer = null;
+      var fieldValue = function (selector, fallback) {
+        var field = document.querySelector(selector);
+        return field ? field.value : fallback;
+      };
 
-        var fieldValue = function (selector, fallback) {
-          var field = document.querySelector(selector);
-          return field ? field.value : fallback;
-        };
+      var drawCard = function () {
+        if (!preview || !canRenderCard) return;
 
-        var draw = function () {
-          window.OgCard.preview(preview, {
-            name: fieldValue(fields.name, config.name),
-            jobTitle: fieldValue(fields.jobTitle, config.jobTitle),
-            summary: fieldValue(fields.summary, config.summary),
-            photo: config.photo,
-            domain: config.domain,
-          });
-        };
-
-        var schedule = function () {
-          clearTimeout(timer);
-          timer = setTimeout(draw, 250);
-        };
-
-        Object.keys(fields).forEach(function (key) {
-          var field = document.querySelector(fields[key]);
-          if (field) field.addEventListener('input', schedule);
+        window.OgCard.preview(preview, {
+          name: fieldValue('#name', config.name),
+          jobTitle: fieldValue('#job_title', config.jobTitle),
+          summary: fieldValue('#about_1', config.summary),
+          photo: config.photo,
+          domain: config.domain,
         });
+      };
 
-        schedule();
+      var drawCardSoon = function () {
+        clearTimeout(timer);
+        timer = setTimeout(drawCard, 250);
+      };
+
+      ['#name', '#job_title', '#about_1'].forEach(function (selector) {
+        var field = document.querySelector(selector);
+        if (field) field.addEventListener('input', drawCardSoon);
+      });
+
+      drawCardSoon();
+
+      // Replacing the profile image uploads it immediately and rebuilds the card.
+      var photoField = document.getElementById('profile_photo');
+      var photoPreview = document.getElementById('profile-photo-preview');
+      var photoStatus = document.getElementById('profile-photo-status');
+
+      var setPhotoStatus = function (message) {
+        if (photoStatus) photoStatus.textContent = message;
+      };
+
+      if (photoField && photoPreview) {
+        photoField.addEventListener('change', function () {
+          var file = photoField.files && photoField.files[0];
+          if (!file) return;
+
+          if (! /^image\/(jpeg|png|webp)$/.test(file.type)) {
+            setPhotoStatus('Choose a JPEG, PNG or WebP image.');
+            return;
+          }
+
+          if (file.size > 8 * 1024 * 1024) {
+            setPhotoStatus('That image is larger than 8 MB.');
+            return;
+          }
+
+          var local = URL.createObjectURL(file);
+          photoPreview.src = local;
+          setPhotoStatus('Uploading…');
+
+          var body = new FormData();
+          body.append('photo', file);
+
+          fetch(@json(route('admin.photo.store')), {
+            method: 'POST',
+            body: body,
+            credentials: 'same-origin',
+            headers: { 'Accept': 'application/json', 'X-CSRF-TOKEN': config.csrf },
+          }).then(function (response) {
+            if (!response.ok) throw new Error('Upload failed with HTTP ' + response.status);
+            return response.json();
+          }).then(function (payload) {
+            URL.revokeObjectURL(local);
+            photoPreview.src = payload.url;
+            photoField.value = '';
+            config.photo = payload.proxy;
+            drawCard();
+            setPhotoStatus('Profile image updated. Rebuilding the social preview…');
+
+            return canRenderCard ? window.OgCard.regenerate(config) : null;
+          }).then(function () {
+            setPhotoStatus('Profile image and social card updated.');
+          }).catch(function (error) {
+            URL.revokeObjectURL(local);
+            photoPreview.src = @json($photo);
+            setPhotoStatus('The image could not be uploaded; the previous one is still in use.');
+            if (window.console && console.warn) console.warn('[profile-photo]', error);
+          });
+        });
       }
 
       @if (session('og_updated_required'))
-        window.OgCard.regenerate(config);
+        if (canRenderCard) window.OgCard.regenerate(config);
       @endif
     });
   </script>
