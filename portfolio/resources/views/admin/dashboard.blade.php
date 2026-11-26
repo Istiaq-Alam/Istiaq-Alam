@@ -39,6 +39,17 @@
     </div>
   </div>
 
+  <div class="card">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <h2 style="margin:0">Social card</h2>
+      <button class="btn" type="button" id="og-card-refresh">Regenerate</button>
+    </div>
+    <p class="item-meta">The image shown when the site is shared. It is built from Edit Details.</p>
+    <img id="og-card-image" src="{{ $ogImage }}" alt="Current social card"
+      style="display:block;width:100%;max-width:520px;height:auto;margin-top:10px;border-radius:8px;border:1px solid var(--line)">
+    <p id="og-card-status" class="item-meta" role="status" aria-live="polite"></p>
+  </div>
+
   <div class="card site-preview">
     <div class="frame-wrap" id="site-preview-wrap">
       <iframe src="{{ route('home') }}?preview=1" title="Preview of the main portfolio page" loading="lazy" tabindex="-1"></iframe>
@@ -67,6 +78,30 @@
           if (p < 1) requestAnimationFrame(step);
         }
         requestAnimationFrame(step);
+      });
+    })();
+  </script>
+
+  <script src="{{ asset('assets/js/og-card.js') }}"></script>
+  <script>
+    (function () {
+      var button = document.getElementById('og-card-refresh');
+      var image = document.getElementById('og-card-image');
+      var status = document.getElementById('og-card-status');
+
+      if (!button || !image || !window.OgCard) return;
+
+      var config = @json($ogCard);
+      config.csrf = @json(csrf_token());
+
+      button.addEventListener('click', function () {
+        button.disabled = true;
+        if (status) status.textContent = 'Generating…';
+
+        window.OgCard.regenerate(config).then(function (url) {
+          button.disabled = false;
+          if (url) image.src = url;
+        });
       });
     })();
   </script>

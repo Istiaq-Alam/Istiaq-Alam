@@ -7,6 +7,7 @@ use App\Models\Message;
 use App\Models\Project;
 use App\Models\Research;
 use App\Models\Skill;
+use App\Support\SiteDetails;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -55,12 +56,23 @@ class AdminController extends Controller
 
     public function dashboard(): View
     {
+        $details = SiteDetails::current();
+
         return view('admin.dashboard', [
             'projectCount' => Project::count(),
             'researchCount' => Research::count(),
             'skillCount' => Skill::count(),
             'certificateCount' => Certificate::count(),
             'unreadCount' => Message::where('is_read', false)->count(),
+            'ogImage' => SiteDetails::ogImageUrl() ?? asset('assets/images/og-image.jpg'),
+            'ogCard' => [
+                'endpoint' => route('admin.og-image.store'),
+                'photo' => '/profile-photo?v='.SiteDetails::photoVersion(),
+                'name' => $details['name'],
+                'jobTitle' => $details['job_title'],
+                'summary' => SiteDetails::summary($details, 220),
+                'domain' => parse_url((string) config('app.url'), PHP_URL_HOST) ?: 'www.istiaq-alam.me',
+            ],
         ]);
     }
 }
