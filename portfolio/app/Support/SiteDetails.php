@@ -3,6 +3,7 @@
 namespace App\Support;
 
 use App\Models\SiteSetting;
+use Illuminate\Support\Str;
 
 class SiteDetails
 {
@@ -50,5 +51,28 @@ class SiteDetails
         }
 
         return $merged;
+    }
+
+    /**
+     * Job title on one line, e.g. "Web Development Intern at Variation Communications Ltd".
+     */
+    public static function headline(array $details): string
+    {
+        $lines = preg_split('/\R/', (string) ($details['job_title'] ?? '')) ?: [];
+
+        $lines = array_filter(array_map(
+            fn (string $line) => trim(rtrim(trim($line), ',')),
+            $lines
+        ));
+
+        return implode(' at ', $lines);
+    }
+
+    /**
+     * First about paragraph on one line, shortened for social cards and search results.
+     */
+    public static function summary(array $details, int $limit = 160): string
+    {
+        return Str::limit(Str::squish(strip_tags((string) ($details['about_1'] ?? ''))), $limit);
     }
 }

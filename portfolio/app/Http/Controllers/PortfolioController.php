@@ -16,8 +16,12 @@ class PortfolioController extends Controller
 {
     public function index(): View
     {
+        $details = SiteDetails::current();
+
         return view('portfolio', [
-            'details' => SiteDetails::current(),
+            'details' => $details,
+            'headline' => SiteDetails::headline($details),
+            'summary' => SiteDetails::summary($details),
             'projects' => Project::orderBy('sort_order')->orderByDesc('id')->get(),
             'githubProjects' => Project::where('is_github_featured', true)->orderBy('sort_order')->orderByDesc('id')->get(),
             'researches' => Research::orderBy('sort_order')->orderByDesc('id')->get(),

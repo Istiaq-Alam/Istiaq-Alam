@@ -6,10 +6,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Istiaq Alam - Portfolio</title>
-  <meta name="description"
-    content="Istiaq Alam is a Computer Science & Engineering student specializing in Cyber Security, Ethical Hacking, and Web Development. Based in Dhaka, Bangladesh." />
-  <meta name="author" content="Istiaq Alam" />
+  <title>{{ $details['name'] }} - Portfolio</title>
+  <meta name="description" content="{{ $summary }}" />
+  <meta name="author" content="{{ $details['name'] }}" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#1a1a2e" />
 
@@ -26,10 +25,9 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Istiaq Alam Portfolio" />
-  <meta property="og:title" content="Istiaq Alam - Front-End Developer & Web Designer | Cyber Security Background" />
-  <meta property="og:description"
-    content="Istiaq Alam is a Computer Science & Engineering student specializing in Cyber Security, Ethical Hacking, and Web Development. Based in Dhaka, Bangladesh." />
+  <meta property="og:site_name" content="{{ $details['name'] }} Portfolio" />
+  <meta property="og:title" content="{{ $details['name'] }} - {{ $headline }}" />
+  <meta property="og:description" content="{{ $summary }}" />
   <meta property="og:url" content="https://istiaq-alam.me" />
   <meta property="og:image" content="https://istiaq-alam.me/assets/images/istiaq.jpg" />
   <meta property="og:image:width" content="1200" />
@@ -38,9 +36,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Istiaq Alam - Front-End Developer & Web Designer | Cyber Security Background" />
-  <meta name="twitter:description"
-    content="CSE student passionate about Ethical Hacking, Penetration Testing, and secure Web Development. Explore my projects and research." />
+  <meta name="twitter:title" content="{{ $details['name'] }} - {{ $headline }}" />
+  <meta name="twitter:description" content="{{ $summary }}" />
   <meta name="twitter:image" content="https://istiaq-alam.me/assets/images/istiaq.jpg" />
 
   <!-- JSON-LD Structured Data -->
@@ -48,11 +45,11 @@
   {
     "@@context": "https://schema.org",
     "@type": "Person",
-    "name": "Istiaq Alam",
+    "name": @json($details['name']),
     "url": "https://istiaq-alam.me",
     "image": "https://istiaq-alam.me/assets/images/istiaq.jpg",
-    "jobTitle": "Web Development Intern at Variation Communications Ltd",
-    "description": "Computer Science & Engineering student specializing in Cyber Security, Ethical Hacking, and Web Development.",
+    "jobTitle": @json($headline),
+    "description": @json($summary),
     "email": "istiak.apk@gmail.com",
     "address": {
       "@type": "PostalAddress",
