@@ -77,6 +77,15 @@
     </form>
   </div>
 
+  <div class="card">
+    <h2>Social preview</h2>
+    <p class="item-meta">
+      The image shown when the site is shared. It follows the fields above as you type and is saved with them.
+    </p>
+    <canvas id="og-card-preview" width="1200" height="630"
+      style="display:block;width:100%;max-width:640px;height:auto;margin-top:10px;border-radius:8px;border:1px solid var(--line)"></canvas>
+  </div>
+
   <p id="og-card-status" class="item-meta" role="status" aria-live="polite">
     The social preview image is rebuilt from these details every time you save.
   </p>
@@ -140,6 +149,40 @@
         summary: @json(\App\Support\SiteDetails::summary($details, 220)),
         domain: @json(parse_url((string) config('app.url'), PHP_URL_HOST) ?: 'www.istiaq-alam.me'),
       };
+
+      var preview = document.getElementById('og-card-preview');
+
+      if (preview) {
+        var fields = { name: '#name', jobTitle: '#job_title', summary: '#about_1' };
+        var timer = null;
+
+        var fieldValue = function (selector, fallback) {
+          var field = document.querySelector(selector);
+          return field ? field.value : fallback;
+        };
+
+        var draw = function () {
+          window.OgCard.preview(preview, {
+            name: fieldValue(fields.name, config.name),
+            jobTitle: fieldValue(fields.jobTitle, config.jobTitle),
+            summary: fieldValue(fields.summary, config.summary),
+            photo: config.photo,
+            domain: config.domain,
+          });
+        };
+
+        var schedule = function () {
+          clearTimeout(timer);
+          timer = setTimeout(draw, 250);
+        };
+
+        Object.keys(fields).forEach(function (key) {
+          var field = document.querySelector(fields[key]);
+          if (field) field.addEventListener('input', schedule);
+        });
+
+        schedule();
+      }
 
       @if (session('og_updated_required'))
         window.OgCard.regenerate(config);

@@ -97,18 +97,37 @@
       .slice(0, 2);
   }
 
+  function delay(ms) {
+    return new Promise(function (resolve) { setTimeout(resolve, ms); });
+  }
+
+  var photoCache = {};
+
   function loadPhoto(src) {
+    if (!src) return Promise.resolve(null);
+    if (photoCache[src]) return Promise.resolve(photoCache[src]);
+
     return new Promise(function (resolve) {
-      if (!src) return resolve(null);
       var image = new Image();
-      image.onload = function () { resolve(image); };
+      image.onload = function () {
+        photoCache[src] = image;
+        resolve(image);
+      };
       image.onerror = function () { resolve(null); };
       image.src = src;
     });
   }
 
-  async function loadFonts() {
-    if (!document.fonts || !document.fonts.load) return;
+  var fontsPromise = null;
+
+  // Loaded once per page; the live preview re-renders on every keystroke.
+  function loadFonts() {
+    if (fontsPromise) return fontsPromise;
+
+    if (!document.fonts || !document.fonts.load) {
+      fontsPromise = Promise.resolve();
+      return fontsPromise;
+    }
 
     var link = document.createElement('link');
     link.rel = 'stylesheet';
@@ -121,19 +140,18 @@
     document.head.appendChild(link);
 
     // A missing font or an offline browser must not block the card.
-    await Promise.race([
-      ready,
-      new Promise(function (resolve) { setTimeout(resolve, 3000); }),
-    ]);
+    fontsPromise = Promise.race([ready, delay(3000)]).then(function () {
+      return Promise.race([
+        Promise.all([
+          document.fonts.load('700 76px Poppins'),
+          document.fonts.load('400 25px Poppins'),
+          document.fonts.load('600 22px Poppins'),
+        ]),
+        delay(3000),
+      ]);
+    });
 
-    await Promise.race([
-      Promise.all([
-        document.fonts.load('700 76px Poppins'),
-        document.fonts.load('400 25px Poppins'),
-        document.fonts.load('600 22px Poppins'),
-      ]),
-      new Promise(function (resolve) { setTimeout(resolve, 3000); }),
-    ]);
+    return fontsPromise;
   }
 
   function paintBackground(ctx) {
@@ -292,6 +310,19 @@
     });
   }
 
+  // Draws the card into a visible canvas, for the admin live preview.
+  function preview(canvas, config) {
+    return render(config).then(function (card) {
+      var ctx = canvas.getContext('2d');
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.drawImage(card, 0, 0, canvas.width, canvas.height);
+      return canvas;
+    }).catch(function (error) {
+      if (window.console && console.warn) console.warn('[og-card]', error);
+      return null;
+    });
+  }
+
   function regenerate(config) {
     return render(config).then(function (canvas) {
       return upload(config, canvas).then(function (url) {
@@ -305,5 +336,5 @@
     });
   }
 
-  window.OgCard = { render: render, regenerate: regenerate };
+  window.OgCard = { render: render, preview: preview, regenerate: regenerate };
 })();
