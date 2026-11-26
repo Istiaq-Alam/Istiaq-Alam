@@ -38,6 +38,9 @@ class SiteDetailsController extends Controller
 
         SiteSetting::store(SiteDetails::KEY, $data);
 
-        return redirect()->route('admin.details.edit')->with('success', 'Details updated.');
+        // The social card is painted from these values in the browser after the redirect.
+        return redirect()->route('admin.details.edit')
+            ->with('success', 'Details updated.')
+            ->with('og_updated_required', true);
     }
 }

@@ -22,6 +22,7 @@ class PortfolioController extends Controller
             'details' => $details,
             'headline' => SiteDetails::headline($details),
             'summary' => SiteDetails::summary($details),
+            'ogImage' => SiteDetails::ogImageUrl() ?? asset('assets/images/og-image.jpg'),
             'projects' => Project::orderBy('sort_order')->orderByDesc('id')->get(),
             'githubProjects' => Project::where('is_github_featured', true)->orderBy('sort_order')->orderByDesc('id')->get(),
             'researches' => Research::orderBy('sort_order')->orderByDesc('id')->get(),

@@ -29,7 +29,8 @@
   <meta property="og:title" content="{{ $details['name'] }} - {{ $headline }}" />
   <meta property="og:description" content="{{ $summary }}" />
   <meta property="og:url" content="https://istiaq-alam.me" />
-  <meta property="og:image" content="https://istiaq-alam.me/assets/images/og-image.jpg" />
+  <meta property="og:image" content="{{ $ogImage }}" />
+  <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="{{ $details['name'] }} - {{ $headline }}" />
@@ -39,7 +40,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="{{ $details['name'] }} - {{ $headline }}" />
   <meta name="twitter:description" content="{{ $summary }}" />
-  <meta name="twitter:image" content="https://istiaq-alam.me/assets/images/og-image.jpg" />
+  <meta name="twitter:image" content="{{ $ogImage }}" />
   <meta name="twitter:image:alt" content="{{ $details['name'] }} - {{ $headline }}" />
 
   <!-- JSON-LD Structured Data -->

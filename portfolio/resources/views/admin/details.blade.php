@@ -77,6 +77,10 @@
     </form>
   </div>
 
+  <p id="og-card-status" class="item-meta" role="status" aria-live="polite">
+    The social preview image is rebuilt from these details every time you save.
+  </p>
+
   <template id="education-template">
     <div class="item entry">
       <label>Title</label>
@@ -119,6 +123,27 @@
           entry.remove();
         }
       }
+    });
+  </script>
+
+  <script src="{{ asset('assets/js/og-card.js') }}"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (!window.OgCard) return;
+
+      var config = {
+        endpoint: @json(route('admin.og-image.store')),
+        csrf: @json(csrf_token()),
+        photo: @json(asset('assets/images/istiaq.jpg')),
+        name: @json($details['name']),
+        jobTitle: @json($details['job_title']),
+        summary: @json(\App\Support\SiteDetails::summary($details, 220)),
+        domain: @json(parse_url((string) config('app.url'), PHP_URL_HOST) ?: 'www.istiaq-alam.me'),
+      };
+
+      @if (session('og_updated_required'))
+        window.OgCard.regenerate(config);
+      @endif
     });
   </script>
 @endsection

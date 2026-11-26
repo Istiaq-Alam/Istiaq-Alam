@@ -3,11 +3,14 @@
 namespace App\Support;
 
 use App\Models\SiteSetting;
+use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Str;
 
 class SiteDetails
 {
     public const KEY = 'details';
+
+    public const OG_IMAGE_KEY = 'og_image';
 
     /**
      * Current page text, used when nothing has been saved yet.
@@ -51,6 +54,29 @@ class SiteDetails
         }
 
         return $merged;
+    }
+
+    /**
+     * Absolute URL of the generated social card, or null when none was generated yet.
+     */
+    public static function ogImageUrl(): ?string
+    {
+        $saved = SiteSetting::valueFor(self::OG_IMAGE_KEY);
+        $url = is_array($saved) ? ($saved['url'] ?? null) : null;
+
+        return is_string($url) && $url !== '' ? ImageUrl::resolve($url) : null;
+    }
+
+    /**
+     * Store a freshly rendered card and return its absolute URL.
+     */
+    public static function storeOgImage(UploadedFile $file): string
+    {
+        $stored = ImageUrl::storeUpload($file);
+
+        SiteSetting::store(self::OG_IMAGE_KEY, ['url' => $stored]);
+
+        return (string) ImageUrl::resolve($stored);
     }
 
     /**

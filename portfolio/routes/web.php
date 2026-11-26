@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\CertificateController;
 use App\Http\Controllers\Admin\MessageController;
+use App\Http\Controllers\Admin\OgImageController;
 use App\Http\Controllers\Admin\PasswordController;
 use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\ResearchController;
@@ -32,6 +33,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
 
         Route::get('/details', [SiteDetailsController::class, 'edit'])->name('details.edit');
         Route::put('/details', [SiteDetailsController::class, 'update'])->name('details.update');
+        Route::post('/og-image', [OgImageController::class, 'store'])->name('og-image.store');
 
         Route::get('/messages', [MessageController::class, 'index'])->name('messages.index');
         Route::patch('/messages/{message}/read', [MessageController::class, 'markRead'])->name('messages.read');
